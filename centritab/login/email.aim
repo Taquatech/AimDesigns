@@ -1,0 +1,11 @@
+<aim-page-title>{{AppName}} - Email Validation</aim-page-title>  
+              
+    <aim-widget LoginMarkup Title="Email" Logo="at" Type="email" InputID="emailinp" DataField="Email" >
+    <Action>{{LoginAction}}</Action>
+    <EmailColor>cen-bg-color-fade-min</EmailColor>
+    <EmailLogo>arrow-alt-circle-right</EmailLogo>
+    <LoadContainer>{{ActionContainer}}</LoadContainer>
+    <EmailText>{{EmailText}}</EmailText>
+    <PasswordText>{{PasswordText}}</PasswordText>
+    <PINText>{{PINText}}</PINText>
+    </aim-widget>

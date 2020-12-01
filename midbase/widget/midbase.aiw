@@ -1,0 +1,244 @@
+<!-- Page Cntainer -->
+<page>
+    <div class="aprs-bg" style="background-image: url({{banner}});"></div>
+    <div class="aprs-small-window w3-card fadeInUp animated fastest" id="{{id}}_parent" {{??}}>
+        <div class="aprs-small-window-banner w3-card" >
+        <div class="aprs-banner fadeIn animated" style="background-image: url({{banner}});">
+                <div class="aprs-banner-cover w3-display-container">
+                    <div class="w3-display-middle w3-center">
+                        <img class="aprs-small-logo fadeInUp animated delay-0-2s" src="{{bannerLogo}}" />
+                        <div class="aprs-banner-text fadeInUp animated delay-0-4s w3-text-white">We turn <strong class="aprs-text-forecolor">DREAMS</strong> to <strong class="aprs-text-forecolor">REALITY</strong></div>
+                    </div>
+                    <button  type="button" class=" fadeIn animated delay-0-6s ripple w3-hide-large w3-hide-medium w3-text-white aprs-button aprs-forecolor aprs-strong w3-center ripple w3-card aprs-banner-btn w3-display-bottommiddle aim-toggler aim-trigger" aim-toggler-class="aprs-show-page" aim-toggler-target="aim-parent-parent-parent-parent">Start</button> 
+                    </div>
+                    
+            </div>
+            
+        </div>
+        <div class="aprs-small-window-content" id="{{id}}">{{?}}</div> 
+        <div class="aprs-clearFloat"></div>     
+    </div>
+</page>
+<!-- Make window wider -->
+<window-wider>
+    <button class="w3-hide aim-toggler aim-autoload" aim-toggler-class="wider-window" aim-toggler-class-type="add" aim-toggler-target="aim-body"></button>
+</window-wider>
+
+<window-smaller>
+    <button class="w3-hide aim-toggler aim-autoload" aim-toggler-class="wider-window" aim-toggler-class-type="remove" aim-toggler-target="aim-body"></button>
+</window-smaller>
+<!-- Page Cntainer -->
+
+<!-- Page padding Container -->
+<pagepadding>
+<div class="aprs-small-window-padding {{class}}">
+{{?}}
+</div>
+</pagepadding>
+<!-- Page padding Container -->
+
+<!-- Home Page Header with Logo  -->
+<headlogo>
+    <img class="aprs-small-logo fadeInUp animated delay-0-2s" src="{{logo}}" />
+        <div class="aprs-small-title fadeInUp animated delay-0-6s">{{logoTitle}}</div>
+        <div class="aprs-small-title aprs-strong w3-margin aprs-text-forecolor fadeInUp animated delay-0-8s">{{title}}</div>
+</headlogo>
+<!-- Home Page Header with Logo  -->
+
+
+
+<!-- Header -->
+<mainhead>
+    <div class="aprs-content-title w3-card fadeInUp animated delay-0-1s">
+        <div class="aprs-content-title-left aprs-content-title-fill"><button class="ripple aprs-back {{backClass}} fadeInUp animated delay-0-4s" {{backAttr}}><i class="fas fa-chevron-left aprs-text-forecolor"></i></button><i class="{{logo}} aprs-text-forecolor fadeInUp animated delay-0-6s"></i><span class="fadeInUp animated delay-0-6s">{{title}}</span></div>
+        <!--<div class="aprs-content-title-right"> <i class="mbri-alert aprs-message"></i> --><!-- <img src="aim://me://images/user.jpg" alt="User" class="w3-card" /> </div>-->
+        <div class="aprs-clearFloat"></div>
+     </div>
+</mainhead>
+<!-- Header -->
+
+<!-- Body -->
+<mainbody>
+    <div class="aprs-content-body" id="{{id}}" {{??}}>
+        {{?}}
+    </div>
+</mainbody>
+<!-- Body -->
+
+<!-- Form -->
+<pageform>
+    <form id="{{id}}" name="{{id}}" method="{{method||post}}" {{??}}>
+        {{?}}
+    </form>
+</pageform>
+<!-- Form -->
+
+<textgroup>
+    <div class="aprs-textbox-group">
+        {{?}}
+    </div>
+</textgroup>
+
+<!-- TextBoxes -->
+<textbox>
+    <div class="aprs-textbox-container {{class}}">
+    <label class="aprs-strong aprs-textbox-label" for="{{id}}">{{label}}</label>
+            <div class="aprs-textbox w3-white w3-card">
+                <input type="{{type||text}}" title="{{label}}"  id="{{id}}" value="{{value}}" {{??}} class="{{iclass}}" name="{{id}}" placeholder="{{placeholder}}" />
+            </div>
+        </div>
+</textbox>
+
+<textpad>
+    <div class="aprs-textbox-container {{class}}">
+        <label class="aprs-strong aprs-textbox-label" for="{{id}}">{{label}}</label>
+                <div class="aprs-textbox w3-white w3-card">
+                    <textarea id="{{id}}" title="{{label}}" {{??}} class="{{iclass}}" name="{{id}}" data-placeholder="{{placeholder}}" >{{value}}{{?}}</textarea>
+                </div>
+            </div>
+</textpad>
+<!-- Textboses -->
+
+<textbutton>
+<div class="aprs-textbox-container {{class}}">
+    <label class="aprs-strong aprs-textbox-label" for="otp" form="signupform">{{label}}</label>
+            <div class="aprs-textbox w3-white w3-card aprs-textbox-button">
+                <input type="{{type||text}}" title="{{label}}" id="{{id}}" value="{{value}}" {{??}} class="{{iclass}}" name="{{id}}" placeholder="{{placeholder}}" />
+                <div class="aprs-textbox-sepbox">|</div>
+                <button id="{{id}}_btn" name="{{id}}_btn" type="button" class="aprs-text-forecolor w3-center {{buttonClass}}" {{buttonAttr}}>{{buttonText}}</button>
+                <div class="aprs-clearFloat"></div>
+            </div>
+</div>
+    
+</textbutton>
+
+<!-- Buttons -->
+<btn>
+    <button id="{{id}}" name="{{id}}" type="{{type||button}}" class="ripple w3-text-white aprs-button aprs-forecolor aprs-strong w3-center ripple w3-card {{class}}" {{??}}>{{?}}</button> 
+</btn>
+<!-- Page Side button -->
+<sidebutton-left>
+    <button id="{{id}}" name="{{id}}" type="button" class="aprs-sidebtn aprs-forecolor w3-text-white w3-card {{class}}" {{??}}><i class="{{logo}}"></i><span>{{?}}{{text}}</span></button>
+</sidebutton-left>
+
+
+
+<!-- Buttons -->
+
+<!-- Dropdown -->
+<dropdown>
+    <div class="{{class}}">
+    <label class="aprs-strong aprs-textbox-label" for="{{id}}">{{label}}</label>
+            <div class="aprs-textbox w3-white w3-card">
+                <span class="custom-select aprs-dropdown">
+                    <select name="{{id}}" class="{{iclass}}" id="{{id}}" {{??}}>
+                      <option value="0">{{placeholder}}</option>
+                      {{?}}              
+                     </select>
+                </span>
+                <div class="aprs-clearFloat"></div>
+            </div>
+        </div>
+</dropdown>
+<!-- Dropdowm -->
+
+<!-- List Box -->
+<listbox>
+    <div class="{{class}}">
+        <label class="aprs-strong aprs-textbox-label" for="{{id}}">{{label}}</label>
+                <div class="aprs-textbox w3-white w3-card">
+                    <div class="listbox">
+                      {{?}}
+                    </div>
+                </div>
+            </div>
+            <div class="aprs-clearFloat"></div>
+</listbox>
+
+<li-bordered>
+<a class="libordered {{class}}" {{??}}>{{?}}</a>
+</li-bordered>
+
+<li-rightlogo>
+    <a href="javascript:void(0)" class="libordered rightlogo {{class}}" {{??}}><span class="{{textclass}}">{{?}}</span><i class="{{logo}} aprs-text-forecolor"></i><div class="aprs-clearFloat"></div></a>
+</li-rightlogo>
+
+<li-leftlogo>
+    <a href="javascript:void(0)" class="libordered rightlogo {{class}}" {{??}}><i class="{{logo}} aprs-text-forecolor"></i><span class="{{textclass}}">{{?}}</span><div class="aprs-clearFloat"></div></a>
+</li-leftlogo>
+
+<li-checkbox>
+    <a href="javascript:void(0)" class="libordered rightlogo licheckbox "><i class="{{logo}} aprs-text-forecolor"></i><span>{{?}}</span>
+        <input type="checkbox" id="{{value}}" {{??}} {{state}} />
+        <div class="aprs-checkbox">
+            <div class="aprs-checkbox-box w3-card aprs-forecolor"><i class="w3-text-white mbri-success w3-display-middle"></i></div>
+            <div class="aprs-clearFloat"></div>
+         </div>
+        <div class="aprs-clearFloat"></div>
+</a>
+</li-checkbox>
+
+<li-radiobutton>
+    <a href="javascript:void(0)" class="libordered rightlogo licheckbox "><i class="{{logo}} aprs-text-forecolor"></i><span>{{?}}</span>
+        <input type="radio" id="{{value}}" name="group" {{??}} {{state}} />
+        <div class="aprs-checkbox">
+            <div class="aprs-checkbox-box w3-card aprs-forecolor"><span class="w3-white w3-display-middle"></span></div>
+            <div class="aprs-clearFloat"></div>
+         </div>
+        <div class="aprs-clearFloat"></div>
+</a>
+</li-radiobutton>
+
+<li-item>
+    <div class="libordered {{class}}" {{??}}>{{?}}</div>
+</li-item>
+<!-- List Box -->
+
+<!-- Check Box -->
+<checkbox>
+    <div class="aprs-checkbox {{class}}">
+       <input type="checkbox" class="{{iclass}}" id="{{id}}" {{??}} {{state}} />
+       <div class="aprs-checkbox-box w3-card aprs-forecolor"><i class="w3-text-white mbri-success w3-display-middle"></i></div>
+       <label class="aprs-textbox-label" for="{{id}}">{{label}}{{?}}</label><div class="aprs-clearFloat"></div>
+    </div>
+</checkbox>
+<radiobutton>
+    <div class="aprs-checkbox">
+       <input type="radio" id="{{id}}" name="{{group}}" {{??}} {{state}} />
+       <div class="aprs-checkbox-box w3-card aprs-forecolor"><span class="w3-white w3-display-middle"></span></div>
+       <label class="aprs-textbox-label" for="{{id}}">{{label}}{{?}}</label><div class="aprs-clearFloat"></div>
+    </div>
+</radiobutton>
+<!-- Check Box -->
+<!-- Label -->
+<elementlabel>
+    <label class="aprs-textbox-label aprs-strong" for="{{target}}">{{?}}</label>
+</elementlabel>
+
+<imagebox>
+    <div class="{{class}} ">
+        <label class="aprs-strong aprs-textbox-label" for="{{id}}">{{label}}</label>
+                <div class="aprs-textbox w3-white w3-card">
+                    <div class="listbox">
+                        <a href="javascript:void(0)" class="libordered rightlogo imagebox aim-filepicker aim-trigger {{iclass}}" aim-filepicker-target="{{id}}" aim-filepicker-max="{{maxsize}}"  aim-filepicker-default="{{src}}" {{??}}><span class=""><img src="" id="{{id}}"  /></span><i class="fas fa-chevron-right aprs-text-forecolor"></i><div class="aprs-clearFloat"></div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="aprs-clearFloat"></div>
+            
+                
+          
+</imagebox>
+
+<passportbox>
+    <div class="{{class}} ">
+        <label class="aprs-strong aprs-textbox-label" for="{{id}}">{{label}}</label>
+                <div class="aprs-textbox w3-white w3-card">
+                    <img src="" id="{{id}}" class="aprs-passpbox aim-filepicker aim-trigger {{iclass}}" aim-filepicker-target="{{id}}" aim-filepicker-max="{{maxsize}}"  aim-filepicker-default="{{src}}" {{??}}  />
+                    </div>
+    </div>
+</passportbox>
+
+<info-image>
+    <img src="{{src}}" class="aprs-info-image {{class}}" style={{style}}>
+</info-image>

@@ -1,0 +1,17 @@
+.aprs-color, .aprs-basecolor{
+    background-color: {{AppBaseColor}} !important;
+    color:#fff
+  }
+  .aprs-color2, .aprs-forecolor{
+    background-color: {{AppForeColor}} !important;
+    color:#fff
+  }
+
+  .aprs-text-color, .aprs-text-basecolor{
+    color: {{AppBaseColor}} !important;
+    color:#fff
+  }
+  .aprs-text-color2, .aprs-text-forecolor{
+    color: {{AppForeColor}} !important;
+    color:#fff
+  }

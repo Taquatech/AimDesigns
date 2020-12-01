@@ -1,0 +1,440 @@
+<!--cen Buttons-->
+<TabButtonRound>
+    <button id="{{ID}}" title="{{Title}}" class="w3-button w3-circle w3-transparent cen-border-white-fade cen-hover-border-white cen-text-white w3-hover-none w3-border cen-square-tiny cen-padding-0 w3-display-container cen-hover-text-color aim-trigger aim-datafill {{Class}}"
+        style="margin-top:5px" aim-src="{{Action}}" aim-container="cen-central-tab">{{Logo}}</button>
+</TabButtonRound>
+
+<Button>
+    <{{Tag||button}} title="{{Title}}" id="{{ID}}" class="w3-btn cen-round-small {{ColorClass||cen-bg-color}} cen-text-white cen-hover-text-white-fade-min w3-example {{Class}}"
+        {{AimAttr}} {{??}} {{InAimAttr}}>
+        <i class="fas fa-{{Logo}} "></i> {{Text}}</{{Tag||button}}>
+</Button>
+
+
+
+<RoundButton>
+    <button id="{{ID}}" title="{{Title}}" class="w3-button w3-circle w3-transparent cen-border-white-fade cen-hover-border-white cen-text-white w3-hover-none w3-border cen-square-tiny cen-padding-0 w3-display-container cen-hover-text-color {{Class}}"
+        {{AimAttr}} {{??}} style="margin-top:5px">
+        <i class="fas fa-{{Logo}} w3-display-middle"></i>
+    </button>
+</RoundButton>
+
+<IconButton>
+    <button title="{{Title}}" id="{{ID}}" class="w3-button w3-transparent w3-hover-none cen-align-middle w3-text-white cen-inline-block cen-hover-text-color-fade {{Class}}"
+        {{AimAttr}} {{??}} {{InAimAttr}}>
+        <i class="fas fa-fw fa-{{Logo}} w3-large cen-align-middle"></i> {{Text}}</button>
+</IconButton>
+
+<LogoButton>
+    <button title="{{Title}}" class="w3-button w3-hover-none w3-transparent w3-hover-text-white w3-text-hover-none w3-opacity w3-hover-opacity-off cen-padding-left-0 cen-padding-right-0 {{Class}}"
+        {{AimAttr}} {{??}}>
+        <i class="fas fa-{{Logo}}"></i>
+    </button>
+</LogoButton>
+
+<OptionButton>
+    <button class="w3-button w3-center cen-block cen-hover-none cen-margin-auto cen-round cen-padding cen-hover-bg-color-fade-max cen-text-shadow-none cen-cursor-pointer cen-page-menu-big w3-card cen-fill-width--30 cen-white-fade-min {{Class}}"
+        style="max-width: 400px;" title="{{Title}}" {{AimAttr}} {{??}}>
+        <div class="cen-square-small  w3-text-white w3-circle cen-bg-color-fade cen-margin-auto w3-display-container">
+            <i class="fas fa-{{Logo}} w3-xxlarge w3-display-middle"></i>
+        </div>
+        <div class="w3-center w3-xlarge cen-bold cen-text-color">{{Title}}</div>
+        <p class="cen-text-black-fade w3-center" style="font-size:1.1em">{{Info}}</p>
+    </button>
+</OptionButton>
+
+<CircleLogo>
+    <div class="cen-square-small  w3-text-white w3-circle cen-margin-bottom-10 {{ColorClass||cen-bg-color-fade}} cen-margin-auto w3-display-container">
+        <i class="fas fa-{{Logo}} w3-xxlarge w3-display-middle"></i>
+    </div>
+</CircleLogo>
+
+<OptionButtonSmall>
+    <button class="w3-button w3-center  cen-margin-small cen-bg-color-fade-max cen-round cen-padding w3-hover-white cen-text-shadow-none cen-cursor-pointer cen-page-menu-big w3-card cen-white-fade-min {{Class}}"
+        {{AimAttr}} {{??}}>
+        <div class="cen-square-small w3-card w3-text-white w3-circle cen-bg-color-fade cen-margin-auto w3-display-container cen-margin-bottom-small">
+            <i class="fas fa-{{Logo}} w3-xxlarge w3-display-middle"></i>
+        </div>
+        <div class="w3-center cen-bold cen-text-color cen-margin-top-10">{{Title}}</div>
+        <div class="w3-center">{{?}}</div>
+
+    </button>
+</OptionButtonSmall>
+
+<FilterButton>
+    <button class="w3-text-white w3-button w3-border-0 w3-hover-none w3-transparent cen-fill-width cen-fill-height cen-hover-text-color {{ToggleClass}}-btn w3-border-bottom cen-padding-right-0 cen-padding-left-0 w3-center cen-fill-width cen-border-color cen-border-thick aim-filter aim-toggler aim-trigger"
+        aim-toggler-altclass="cen-filter-first cen-filter-second cen-filter-third" aim-toggler-class="{{ToggleClass}}" aim-toggler-target="{{Container}}"
+        aim-filter-box="{{FilterBox}}" value="{{Value}}" aim-filter-target="{{FilterTarget}}">
+        <i class="fas fa-{{Logo}}"></i>
+        <span class="w3-hide-medium w3-hide-small">{{Text}}</span>
+    </button>
+</FilterButton>
+
+<!--cen Buttons End-->
+
+<!--cen Main Menu-->
+<Menus>
+    <button title="{{Title}}" id="{{ID}}" class="cen-menu cen-margin-small cen-hover-bg-color-fade-max cen-height-30 cen-overflow-hidden {{Action||aim-datafill aim-trigger}} cen-block w3-transparent cen-padding-0 cen-text-white cen-border-0 w3-left-align"
+        aim-src="{{Page}}" {{AimAttr||aim-container="cen-central-tab"}} {{??||aim-container="cen-central-tab"}}>
+        <span class="cen-inline-block cen-bg-color cen-fill-height cen-align-middle " style="width:2px;opacity:0">&nbsp;</span><span class="cen-square-tiny w3-display-container cen-inline-block cen-align-middle  cen-menu-logo">
+            <i class="fas fa-{{Logo}} w3-display-middle cen-font-bigger w3-opacity"></i>
+        </span>
+        <span class="cen-inline-block cen-align-middle cen-menu-text cen-margin-side  w3-hide-medium" style="width:126px">{{Title}}</span>
+        <span class="cen-inline-block cen-align-middle cen-square-20 w3-hide w3-circle w3-display-container cen-black-fade  w3-hide-medium">
+            <i class="fas fa-cog w3-display-middle cen-smaller cen-hover-text-white-fade"></i>
+        </span>
+    </button>
+</Menus>
+<!--cen Main Menu End-->
+
+<!--cen Tabs-->
+<TabButton>
+    <button class="cen-tab-button w3-button cen-text-white cen-hover-black-fade w3-hover-none cen-padding-top-small cen-padding-buttom-0 cen-padding-right-0 cen-hover-text-white cen-margin-top-10 cen-black-fade cen-height-30 cen-round-top-small w3-left-align {{Class}}">
+        <div class="">
+            <i class="fas fa-{{Logo}} cen-align-middle cen-inline-block w3-opacity"></i>
+            <span class="cen-align-middle cen-inline-block">{{Title}}</span>
+            {{CloseBtn||
+            <span class="cen-align-middle cen-inline-block cen-width-30 w3-center cen-font-light aim-tab-close">
+                <i class="fas fa-times cen-tab-close cen-hover-text-white-fade cen-smaller"></i>
+            </span>}}
+        </div>
+    </button>
+</TabButton>
+
+<TabContent>
+    <div class="aim-tab-content cen-fill-height">
+        <!-- Page tab header -->
+        <div class="w3-display-container cen-height-60 cen-fill-width--30 cen-margin-auto cen-overflow-hidden fadeInDown animated">
+            <div class="w3-xlarge w3-display-left cen-bigger-in-small">
+                    <i class="fas fa-{{TabLogo}}"></i> {{TabTitle}}
+                    <span class="cen-text-color cen-smaller"></span>
+            </div>
+            <!--<button title="Close Tab" class="w3-button w3-circle w3-transparent cen-border-white-fade cen-hover-border-white cen-text-white w3-hover-none w3-border cen-square-tiny cen-padding-0 w3-display-container cen-hover-text-color w3-display-right aim-tab-close">
+                <i class="fas fa-times w3-display-middle"></i>
+            </button>-->
+            <div class="w3-display-right">
+                {{TabHeaderButton}} {{Tab-Header-Button}}
+            </div>
+
+        </div>
+
+        <div class="cen-fill-height--60 w3-animate-opacity cen-relative cen-welcome-page cen-overflow-auto">
+            <!--<img id="cen-welcome-logo" class="cen-welcome-top-logo" src="images/resourse/info.png" />-->
+            <div class="w3-card-4 cen-main-tab-bg  w3-topbar cen-border-color  cen-padding-0 cen-margin-auto cen-hover-overflow-auto cen-fill-width"
+                style="height:100%;">
+                {{?}}
+            </div>
+
+        </div>
+    </div>
+</TabContent>
+
+<!-- For transparent content box -->
+<TabContent2>
+    <div class="aim-tab-content cen-fill-height">
+        <!-- Page tab header -->
+        <div class="w3-display-container cen-height-60 cen-fill-width--30 cen-margin-auto fadeInDown animated ">
+            <div class="w3-xlarge w3-display-left cen-bigger-in-small">
+                <i class="fas fa-{{TabLogo}}"></i> {{TabTitle}}
+                <span class="cen-text-color cen-smaller"></span>
+            </div>
+            <!--<button title="Close Tab" class="w3-button w3-circle w3-transparent cen-border-white-fade cen-hover-border-white cen-text-white w3-hover-none w3-border cen-square-tiny cen-padding-0 w3-display-container cen-hover-text-color w3-display-right aim-tab-close">
+                <i class="fas fa-times w3-display-middle"></i>
+            </button>-->
+            <div class="w3-display-right ">
+                {{TabHeaderButton}}
+            </div>
+
+        </div>
+
+        <div class="cen-fill-height--60 {{Transition||w3-animate-opacity}} cen-relative cen-welcome-page cen-overflow-hidden ">
+
+            {{?}}
+
+
+        </div>
+    </div>
+</TabContent2>
+
+<!-- Search bar for transparent tab body-->
+<SearchBox>
+    <div class="w3-row cen-height-50 cen-white-fade-max w3-padding fadeInUp animated  delay-0-1s">
+        <div class="w3-col s8">
+            <div class="w3-row cen-margin-bottom-small">
+                <div class=" w3-col w3-display-container cen-square-tiny cen-align-bottom cen-text-black-fade" style="width:30px">
+                    <i class="w3-text-white w3-large fas fa-filter w3-display-middle"></i>
+                </div>
+                <div class="w3-rest">
+                    <input class="w3-text-white w3-input w3-border-0 w3-transparent aim-filter {{SearchClass}}" aim-filter-box="{{FilterBox}}"
+                        aim-filter-target="{{FilterTarget}}" name="first" type="text" placeholder="Filter {{Title}}" value="{{Value}}">
+                </div>
+            </div>
+        </div>
+        <div class="w3-col s4">
+
+            <div class="w3-row cen-filter-first" id="fcont-{{FilterBox}}">
+                <div class="w3-col s4" title="{{FilterText1||ALL}}">
+                    <aim-widget FilterButton ToggleClass="cen-filter-first" Container="fcont-{{FilterBox}}" FilterBox="{{FilterBox}}" Logo="{{FilterLogo1||users}}"
+                        Text="{{FilterText1||ALL}}" FilterTarget="{{FilterTarget}}" Value="{{FilterValue1}}"></aim-widget>
+                </div>
+                <div class="w3-col s4" title="{{FilterText2||BMA}}">
+                    <aim-widget FilterButton ToggleClass="cen-filter-second" Container="fcont-{{FilterBox}}" FilterBox="{{FilterBox}}"
+                        Logo="{{FilterLogo2||chess-queen}}" Text="{{FilterText2||BMA}}" FilterTarget="{{FilterTarget}}" Value="{{FilterValue2||BMA}}"></aim-widget>
+                </div>
+
+                <div class="w3-col s4" title="{{FilterText3||CBA}}">
+                    <aim-widget FilterButton ToggleClass="cen-filter-third" Container="fcont-{{FilterBox}}" FilterBox="{{FilterBox}}" FilterTarget="{{FilterTarget}}"
+                        Logo="{{FilterLogo3||chess-rook}}" Text="{{FilterText3||CBA}}" Value="{{FilterValue3||CBA}}"></aim-widget>
+                </div>
+            </div>
+        </div>
+    </div>
+</SearchBox>
+
+<SearchBoxOnly>
+    <div class="w3-row cen-height-50 cen-white-fade-max w3-padding fadeInUp animated  delay-0-1s">
+        <div class="w3-col s12">
+            <div class="w3-row cen-margin-bottom-small">
+                <div class=" w3-col w3-display-container cen-square-tiny cen-align-bottom cen-text-black-fade" style="width:30px">
+                    <i class="w3-text-white w3-large fas fa-filter w3-display-middle"></i>
+                </div>
+                <div class="w3-rest">
+                    <input class="w3-text-white w3-input w3-border-0 w3-transparent aim-filter {{SearchClass}}" aim-filter-box="{{FilterBox}}"
+                        aim-filter-target="{{FilterTarget}}" name="first" type="text" placeholder="Filter {{Title}}"  value="{{Value}}">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</SearchBoxOnly>
+<!-- Search bar for transparent tab body-->
+<!--Tab List Box-->
+<TabListBox>
+    <div class="cen-fill-height--50 cen-hover-overflow-auto cen-padding-top cen-fill-width cen-margin-auto">
+        <ul class="w3-ul w3-margin-bottom" id="{{ID}}">
+            {{TabListContent}}
+        </ul>
+    </div>
+</TabListBox>
+<!--Tab List Box Ends-->
+
+<!--Tab List Item-->
+<TabListItem>
+    <li class="w3-padding-top-small w3-border-bottom cen-border-white-fade-max w3-row-padding cen-padding-left-0 cen-padding-right-0 cen-padding-bottom-0 cen-hover-bg-color-fade-max cen-cursor-pointer cen-hover-display fadeInUp animated {{Class||aim-filter-item}}"
+        id="{{ID}}" {{LAttr}} style="animation-delay:0.{{Counter||1}}s">
+        {{TabListItemContent}}
+        {{?}}
+    </li>
+</TabListItem>
+<!--Tab List Item End-->
+<!--Transparent tabBody End-->
+
+<Form>
+    <form class="w3-container w3-text-grey w3-padding cen-overflow-y-auto cen-overflow-x-hidden cen-fill-height cen-block w3-animate-opacity cen-padding-left-0 cen-padding-right-0" {{FormAttr}} {{??}}
+        id="{{FormID}}">
+        {{?}}
+    </form>
+</Form>
+<!--cen Tabs End-->
+
+<!-- Not available Content -->
+<NotAvailable>
+    <div class="w3-container w3-padding cen-overflow-y-auto {{Class||w3-text-dark-grey}} cen-overflow-x-hidden cen-fill-height--50 cen-na"
+        id="">
+        <div class=" w3-animate-right">
+            <div>
+                <div class="w3-padding-small w3-xlarge  cen-padding-top-0 cen-margin-top-0 w3-left cen-fill-width--60">Require Setup or Technical Review in Progress !!!</div>
+                <div style="clear:both"></div>
+            </div>
+            <hr/>
+            <div class="w3-row w3-medium w3-padding-large">
+                {{NABody}}
+            </div>
+        </div>
+    </div>
+</NotAvailable>
+<!-- Not available Content End-->
+
+<!-- Login Markup -->
+<LoginMarkup>
+    <div class="w3-animate-right">
+        <!-- <div style="margin:auto" class="w3-circle cen-white-fade cen-square-small cen-block w3-display-container">
+            <i class="fas fa-{{Logo}} w3-jumbo w3-display-middle"></i> 
+        </div>-->
+        <!-- <h2 class="w3-xlarge" style="line-height:0.1">{{Title}} Verification</h2> -->
+        <form class="cen-block w3-margin-top loginpage">
+            <a title="Cancel Verification" class="cen-round-top-left w3-left cen-block w3-button cen-danger-fade-min cen-padding-small w3-small cen-margin-right-small cen-align-top cen-hover-danger-fade-min w3-display-container cen-hover-text-white-fade aim-trigger aim-datafill"
+                aim-src="root://ui/centritab/home.aim" aim-container="aim-body" style="width:30px;height:30px" aim-data="back=1">
+                <i class="fas fa-times w3-display-middle"></i>
+            </a>
+             <input type="{{Type||password}}" id="{{InputID}}" required class="{{Dropdown}} w3-left cen-block cen-white-fade-min cen-padding-small w3-small cen-margin-0 cen-border-0 cen-align-top cen-focus-white aim-focus"
+                aim-datafield="{{DataField}}" placeholder="User Login {{Title}}" style="width:calc(100% - 66px);height:30px">
+                <select  id="{{InputID}}{{Dropdown}}" required class="{{Dropdown}} w3-select w3-left cen-block cen-white-fade-min cen-padding-small w3-small cen-margin-0 cen-border-0 cen-align-top cen-focus-white aim-focus"
+                aim-datafield="{{DataField}}" aim-get-value="true" title="User Login {{Title}}" style="width:calc(100% - 66px);height:30px">
+                   {{Options}}
+                </select>
+            <button title="Verify {{Title}}" class="cen-round-top-right w3-left cen-block w3-button cen-bg-color-fade-min cen-padding-small w3-small cen-margin-left-small cen-align-top cen-hover-text-white-fade aim-trigger aim-datafill {{ButtonClass}}"
+                aim-src="{{Action}}" aim-container="{{LoadContainer||aim-body}}" style="width:30px;height:30px" aim-data="\{{{{InputID}}{{Dropdown}}\}}">
+                <i class="fas fa-chevron-right"></i>
+            </button> 
+            <div style="clear:both"></div>
+        </form>
+    </div>
+    <div class="cen-fill-width w3-row cen-smaller cen-margin-top-small">
+        <div class="w3-col s4">
+            <div class="cen-white-fade w3-padding-small {{EmailColor}} cen-fill-width cen-round-bottom-left">
+                <i class="fas fa-{{EmailLogo||check}}"></i> {{EmailText||Email}}
+            </div>
+        </div>
+        <div class="w3-col s4 cen-padding-side-small ">
+            <div class="cen-white-fade w3-padding-small {{PasswordColor}} cen-fill-width">
+                <i class="fas fa-{{PasswordLogo||exclamation-triangle}} "></i> {{PasswordText||P.word}}
+            </div>
+        </div>
+
+        <div class="w3-col s4 ">
+            <div class="cen-white-fade w3-padding-small cen-fill-width {{PINColor}} cen-round-bottom-right">
+                <i class="fas fa-{{PINLogo||exclamation-triangle}}"></i> {{PINText||OTP}}
+            </div>
+        </div>
+
+    </div>
+</LoginMarkup>
+<!-- Login Markup End -->
+
+<!-- Theme Selector -->
+<ThemeButton>
+    <div id="theme-{{ThemeName}}" class="cen-margin-top cen-fill-width cen-margin-auto cen-bg cen-theme-{{ThemeName}} cen-shadow-white w3-hover-opacity w3-circle cen-overflow-hidden aim-trigger aim-toggler aim-localstore"
+        aim-data="Theme=cen-theme-{{ThemeName}}" aim-toggler-target="aim-body" aim-toggler-class="cen-theme-{{ThemeName}}" aim-toggler-altclass="\{{classlist\}}"
+        aim-localstore-data="Theme=cen-theme-{{ThemeName}}">
+        <div class="cen-height-50 cen-theme-ind cen-round-top w3-display-container">
+            <i class="fas fa-check cen-padding w3-circle  cen-text-white fa-2x w3-display-middle"></i>
+        </div>
+        <div class="w3-padding-small w3-center cen-{{ThemeName}} cen-round-bottom" style="text-transform: capitalize">{{ThemeName}}</div>
+    </div>
+</ThemeButton>
+<!-- Theme Selector End -->
+
+<!-- Form Elements-->
+<GroupBox>
+    <div class="cen-fill-width cen-round-small w3-white w3-card {{Close||cen-groupbox-open}} cen-margin-auto cen-padding-bottom w3-margin-bottom cen-groupbox {{GroupClass}}"
+        style="{{GroupStyle}}" id="{{GroupID}}">
+        <div class="w3-padding cen-margin-top-0 w3-border-bottom cen-border-color-fade cen-border-thin w3-card cen-uppercase w3-display-container cen-round-top-small cen-height-30 cen-groupbox-header aim-toggler aim-trigger cen-cursor-pointer"
+            aim-toggler-target="aim-parent" aim-toggler-class="cen-groupbox-open" style="z-index: 3;color:#555">
+            <div class="w3-display-left w3-margin-left cen-bold">
+                <i class="fas fa-{{GroupLogo||object-group}}"></i> {{GroupTitle}}</div>
+            <div class="w3-display-right w3-margin-right">
+                <i class="fas fa-plus"></i>
+                <i class="fas fa-minus"></i>
+            </div>
+        </div>
+        <div class="cen-fill-width cen-block cen-hover-none cen-margin-auto cen-page-menu-big cen-padding-top cen-padding-bottom cen-groupbox-cont" {{??}}>
+            {{?}}
+        </div>
+    </div>
+</GroupBox>
+
+<TextBox>
+    <div class="w3-row w3-border-bottom cen-margin-bottom-small {{ObjectClass}}" title="{{Title}}">
+        <div class="w3-col w3-display-container cen-square-tiny cen-align-bottom cen-text-black-fade" style="width:30px">
+            <i class="w3-large fa fa-{{Logo}} w3-display-middle"></i>
+        </div>
+        <div class="w3-rest">
+            <input class="w3-input  w3-border-0 w3-transparent {{Class}}" name="{{ID}}" id="{{ID}}" {{AimAttr}} {{??}} type="{{Type||text}}" placeholder="{{Title}}"
+                value="{{Value}}">
+        </div>
+    </div>
+</TextBox>
+
+<TextBoxButton>
+    <div class="w3-row w3-border-bottom cen-margin-bottom-small {{ObjectClass}}" style="position:relative" title="{{Title}}">
+            <div class="w3-col w3-display-container cen-square-tiny cen-align-bottom cen-text-black-fade" style="width:30px">
+                    <i class="w3-large fa fa-{{Logo}} w3-display-middle"></i>
+                </div>
+            <div class="w3-rest">
+                <input contenteditable="true" placeholder="{{Title}}" class="w3-input w3-text-black w3-border-0 w3-transparent {{Class}}" name="{{ID}}" id="{{ID}}" {{AimAttr}} {{??}} style="min-width:200px;display:inline-block;width:auto;vertical-align:middle" value="{{Value}}" />
+                
+                <div class="" style="display:inline-block;vertical-align:middle">
+                        {{?}}
+                     </div>
+            </div>
+            
+        </div>
+</TextBoxButton>
+
+<FillTextBox>
+    <input class="w3-input  w3-border-0 w3-transparent cen-fill {{Class}}" name="{{ID}}" id="{{ID}}" {{AimAttr}} {{??}} type="{{Type||text}}" placeholder="{{Title}}" value="{{Value}}">
+</FillTextBox>
+
+<ComboBox>
+    <div class="w3-row w3-border-bottom cen-margin-bottom-small" title="{{Title}}">
+        <div class="w3-col w3-display-container cen-square-tiny cen-align-bottom cen-text-black-fade" style="width:30px">
+            <i class="w3-large fa fa-{{Logo}} w3-display-middle"></i>
+        </div>
+        <div class="w3-rest">
+            <select class="w3-select w3-border-0 w3-white w3-transparent {{Class}}" {{AimAttr}} {{??}} style="padding:8px" id="{{ID}}">
+                {{?}}
+            </select>
+        </div>
+    </div>
+</ComboBox>
+
+<FillComboBox>
+    <select class="w3-select w3-border-0 w3-white w3-transparent cen-fill {{Class}}" title="{{Title}}" {{AimAttr}} {{??}} style="padding:8px"
+        id="{{ID}}">
+        {{?}}
+    </select>
+</FillComboBox>
+
+<CheckBox>
+    <label class="cen-switch {{OuterClass}}" style="" title="{{Title}}">
+        <input type="{{Type||checkbox}}" name="{{Name}}" id="{{ID}}" class="{{Class}}" {{Checked}} {{AimAttr}} {{??}} />
+        <div class="w3-round w3-card cen-switch-bar"></div>
+        <i class="w3-button w3-circle w3-card cen-switch-nob"></i>
+    </label>{{?}}
+</CheckBox>
+
+<ListBox>
+    <ul class="w3-ul cen-listbox w3-text-dark-grey {{Class}}" style="text-align: left" {{ListAttr}} {{??}}>
+        {{?}}
+    </ul>
+</ListBox>
+
+<ListItem>
+    <li class="{{Class}}" {{??}}>
+        {{?}}
+    </li>
+</ListItem>
+
+<ListCheckBox>
+    <aim-widget ListItem Class="w3-hover-light-grey cen-padding-0 w3-padding-right {{LCBBodyClass}}">
+
+        <div class="w3-left cen-bigger cen-fill-width--60 aim-trigger cen-cursor-pointer w3-padding cen-padding-right-0 cen-padding-left-0 cen-align-middle"
+            aim-trigger-target="{{LCBID}}" aim-trigger-action="aim-click">
+            <span class="cen-width-30 cen-inline-block w3-text-grey w3-margin-left cen-align-middle">
+                <i class="fas fa-{{LCBLogo}} cen-text-color {{LCBLogoClass||w3-xlarge}} fa-fx"></i>
+            </span>
+            <span class="cen-smaller cen-inline-block cen-align-middle" style="width:calc(100% - 55px)">
+                <div>{{LCBText}}</div>
+                <div class="cen-smaller">
+                    <i>{{LCBDescr}}</i>
+                </div>
+            </span>
+        </div>
+        <div class="w3-right w3-padding cen-padding-right-0 cen-padding-left-0" style="margin-right:25px">
+        <aim-widget CheckBox ID="{{LCBID}}" Title="{{LCBDescr}}" Class="{{LCBClass}}" Checked="{{LCBChecked}}" {{LCBAimAttr}}></aim-widget>
+        </div>
+        <div style="clear:both"></div>
+
+    </aim-widget>
+</ListCheckBox>
+<!-- Form Elements Ends-->
+
+<!-- Notes -->
+<Note>
+    <div class="cen-note {{BGClass||cen-danger-fade}} cen-text-shadow-none cen-italic w3-border {{BorderClass||cen-border-danger-fade}} {{Class}}" {{??}}>
+       <div class="cen-note-icon {{LogoBGClass||cen-danger}} {{LogoTextClass||w3-text-white}} w3-circle cen-shadow-black"><i class="fas fa-{{Logo||info}} fa-fw"></i></div>
+       {{?}}
+    </div>
+</Note>
+<!-- Notes -->

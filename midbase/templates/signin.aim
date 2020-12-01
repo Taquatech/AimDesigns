@@ -1,0 +1,14 @@
+<aim-local-data>
+    {
+        "PageID":"signupform",
+        "Banner":{
+            "Background":"aim://me://images/pebbles.jpg","Logo":"aim://me://images/logosm_white.png"
+        }
+    }
+</aim-local-data>
+
+        <aim-widget page id="{{PageID}}" banner="{{Banner->Background}}" bannerLogo="{{Banner->Logo}}">
+    <aim-import>@me://templates/signincontent.aim</aim-import>
+ </aim-widget>
+    
+

@@ -1,0 +1,391 @@
+<% #MainScript %>
+    <aim-body-attribute>class="w3-text-white {{Theme}} cen-minimize-menu"</aim-body-attribute>
+    
+        <aim-page-title>Welcome to {{AppName}}</aim-page-title>
+        <aim-section Success>
+                 <!--The Main Container -->
+        <div id="cen-main-container" class="cen-fixed cen-stretch cen-text-white w3-animate-opacity cen-smaller">
+
+            <!--The Top Header -->
+            <div id="cen-main-header" class="w3-display-container cen-white-fade-ext">
+                <!-- Left Header Content -->
+                <div class="w3-display-left">
+                    <!-- Left Sidebar Menu button for small screen -->
+                    <aim-widget RoundButton ID="cen-main-menu-btn-small" Title="Main Menu" Class="w3-hide-large w3-hide-medium aim-toggler aim-trigger w3-margin-left"
+                        Logo="bars">
+                        <AimAttr>aim-toggler-target="cen-menu-sidebar" aim-toggler-class="cen-show"</AimAttr>
+                    </aim-widget>
+
+                    <span class="w3-xlarge cen-margin-left-small cen-align-middle cen-text-shadow" style="display:inline-block;height:40px" title="{{AppName}}">{{AppAbbr}}</span>
+                    <span class="cen-bg-color-fade-min cen-padding-small w3-card cen-inline-block cen-align-middle cen-round-top-left cen-round-bottom-right w3-hide-small syst">{{AppSubName}}</span>
+                </div>
+                <!-- Left Header Content Ends-->
+
+                <!-- Right Header Content -->
+                <div class="w3-display-right">
+                    <!-- Login User Image -->
+                    <img src="{{Passport}}" class="cen-align-middle cen-inline-block cen-square-tiny w3-card w3-circle cen-bg-color-fade-max"
+                    />
+                    <span class="cen-align-middle  cen-text-shadow cen-inline-block w3-hide-small cen-uppercase">{{FN}} {{MN}} {{LN}}</span>
+                  
+                    <!-- Notification Button -->
+                    {{Notification}}
+                    <aim-widget IconButton Logo="bell" Class="cen-padding-left-0  w3-margin-left  cen-text-shadow {{NotClass}}" Title="Notification">
+                        <AimAttr>aim-src="{{NotSrc}}" aim-data="{{NotData}}" aim-container="cen-central-tab"</AimAttr>
+                        <Text>
+                            <span class="cen-align-middle w3-circle cen-bg-color cen-padding-small cen-tiny w3-card " style="margin-left:-10px; margin-top:-10px; font-size:0.7em">{{NotCount}}</span>
+                        </Text>
+                    </aim-widget>
+                    {{Notification}}
+
+                    <!-- Right Bar Buttons -->
+                    <aim-widget IconButton Class="cen-padding-left-0 cen-padding-right-0 w3-hide-large w3-hide-medium aim-toggler aim-trigger  cen-text-shadow" Logo="server" Title="Show Right Bar">
+                        <AimAttr>aim-toggler-target="cen-summary-box" aim-toggler-class="cen-show"</AimAttr>
+                    </aim-widget>
+                
+                    <!-- Other Buttons -->
+                    {{TopIcons}}
+                    <aim-widget IconButton Class="{{Class}}  cen-text-shadow" Logo="{{Logo}}" Title="{{Title}}">
+                        <AimAttr>
+                            {{AimAttr}}
+                             {{Attr}}="{{Val}}" 
+                            {{AimAttr}}
+                        </AimAttr>
+                    </aim-widget>
+                    {{TopIcons}}
+
+                    <!-- Logout Buttons -->
+                    {{LogoutButton}}
+                    <aim-widget IconButton Class="{{Class}}  cen-text-shadow" Logo="{{Logo}}" Title="{{Title}}">
+                        <AimAttr>
+                            {{AimAttr}}
+                             {{Attr}}="{{Val}}" 
+                            {{AimAttr}}
+                        </AimAttr>
+                    </aim-widget>
+                    {{LogoutButton}}
+                </div>
+                <!-- Right Header Content Ends-->
+            </div>
+            <!--The Top Header Ends-->
+
+            <!--The Sub Header -->
+            <div id="cen-main-header2" class="cen-black-fade-ext w3-hide-small">
+                <!-- Left Sidebar Header -->
+                <div class="cen-side-width w3-left cen-fill-height cen-padding-left">
+                    {{AccessButton}}
+                    <aim-widget RoundButton ID="{{ID}}" Class="{{Class}} w3-margin-right  cen-text-shadow" Logo="{{Logo}}" Title="{{Title}}">
+                        <AimAttr>
+                            {{AimAttr}}
+                              {{Attr}} = "{{Val}}" 
+                            {{AimAttr}}
+                        </AimAttr>
+                    </aim-widget>
+                    {{AccessButton}}
+                </div>
+                <!-- Left Sidebar Header Ends-->
+
+                <!-- Main / Tab button Header -->
+                <div class="cen-main-content w3-left  cen-fill-height cen-overflow-hidden aim-tab" id="cen-central-tab" aim-tab-body="cen-main-tab-body">
+                    <div class="cen-fill-width--30 w3-left cen-overflow-hidden aim-tab-head" aim-tab-active="cen-active">
+                        <!--aim-databind-->
+
+                        <!-- Note: adding class cen-active to tab button class makes it active -->
+                        <!-- Main / Tab buttons -->
+                        <!-- Needed to set the class (aim-tab-button) in case the page is the home page so that aim js engine will be able to identify it -->
+                        <aim-widget TabButton Class="aim-tab-button" Logo="handshake" Title="Welcome">
+                            <CloseBtn><span class="cen-align-middle cen-inline-block cen-padding"></span></CloseBtn>
+                        </aim-widget>
+                    </div>
+                </div>
+                <!-- Main / Tab button Header Ends -->
+
+                <!-- Right sidebar Header -->
+                <div class="cen-side-width-large w3-left cen-dashboard-menu cen-fill-height ">
+                        <aim-widget IconButton ID="cen-hide-top-btn" Class="aim-toggler aim-trigger  cen-text-shadow w3-hide-medium  w3-right" Logo="chevron-up" Title="Toggle Top Header">
+                                <AimAttr>
+                                    aim-toggler-target="aim-body" aim-toggler-class="cen-hide-top-header"
+                                </AimAttr>
+                            </aim-widget>
+                                                              
+                        <!-- Logout Buttons -->
+                    {{LogoutButton}}
+                    <aim-widget IconButton Class="{{Class}} cen-text-shadow sub-logout-btn w3-right w3-hide-medium cen-padding-right-0" Logo="{{Logo}}" Title="{{Title}}">
+                        <AimAttr>
+                            {{AimAttr}}
+                             {{Attr}}="{{Val}}" 
+                            {{AimAttr}}
+                        </AimAttr>
+                    </aim-widget>
+                    {{LogoutButton}}
+                    
+                            <!-- Other Buttons -->
+                            {{TopIcons}}
+                            <aim-widget IconButton Class="{{Class}} cen-text-shadow sub-logout-btn w3-right w3-hide-medium cen-padding-right-0 w3-margin-left" Logo="{{Logo}}" Title="{{Title}}">
+                                <AimAttr>
+                                    {{AimAttr}}
+                                     {{Attr}}="{{Val}}" 
+                                    {{AimAttr}}
+                                </AimAttr>
+                            </aim-widget>
+                            {{TopIcons}}
+
+                        
+                            <!-- Notification Button -->
+                            {{Notification}}
+                            <aim-widget IconButton Logo="bell" Class="cen-padding-left-0  w3-margin-left  cen-text-shadow {{NotClass}}  sub-logout-btn w3-right w3-hide-medium cen-padding-right-0" Title="Notification">
+                                <AimAttr>aim-src="{{NotSrc}}" aim-data="{{NotData}}" aim-container="cen-central-tab"</AimAttr>
+                                <Text>
+                                    <span class="cen-align-middle w3-circle cen-bg-color cen-padding-small cen-tiny w3-card " style="margin-left:-10px; margin-top:-10px; font-size:0.7em">{{NotCount}}</span>
+                                </Text>
+                            </aim-widget>
+                            {{Notification}}
+
+                            <img src="{{Passport}}" class="cen-align-middle cen-inline-block cen-square-tiny w3-card w3-circle cen-bg-color-fade-max  sub-logout-btn w3-right w3-hide-medium cen-padding-right-0 cen-margin-top-small"
+                            />
+                    <!-- Right sidebar display button for medium and small screen -->
+                    <aim-widget RoundButton ID="cen-sammary-menu" Class="w3-right w3-hide-large aim-toggler aim-trigger w3-margin-right" Logo="server"
+                        Title="Show Right Bar">
+                        <AimAttr>aim-toggler-target="cen-summary-box" aim-toggler-class="cen-show"</AimAttr>
+                    </aim-widget>
+
+                    <div style="clear: both"></div>
+                </div>
+                <!-- Right sidebar Header Ends-->
+                <div style="clear: both"></div>
+            </div>
+            <!--The Sub Header Ends-->
+
+            <!--The Main body-->
+            <div id="cen-main-body" class="cen-black-fade-ext">
+                <!-- Left sidebar -->
+                <div id="cen-menu-sidebar" class="cen-side-width w3-left cen-fill-height cen-black-fade w3-hide-small w3-animate-left">
+                    <!-- Close Button -->
+                    <div class="cen-height-30 cen-margin-right-small w3-display-container w3-margin-right w3-hide-large w3-hide-medium">
+                        <i class="fas fa-times-circle cen-hover-text-white-fade cen-text-white w3-display-right aim-toggler aim-trigger" aim-toggler-target="cen-menu-sidebar"
+                            aim-toggler-class="cen-show"></i>
+                    </div>
+
+                    <!-- Main Menus -->
+                    <aim-widget Menus ID="cen-start-menu" Action="w3-hide-small w3-hide-medium aim-toggler aim-trigger cen-bold" Logo="bars" Title="START">
+                        <AimAttr>aim-toggler-target="aim-body" aim-toggler-class="cen-minimize-menu"</AimAttr>
+                    </aim-widget>
+                    <!-- Dynamic Menu from -->
+                    <hr class="cen-border-color cen-border-thick w3-hide-small w3-hide-medium">
+                    {{Menus}}
+                      {{Group}}
+                      <aim-widget Menus ID="{{ID}}" Logo="{{Logo}}" Title="{{Title}}"><Page>{{Page}}</Page>
+                        </aim-widget>
+                      {{Group}}
+                      <hr class="cen-border-white-fade">
+                    {{Menus}}
+                  <!-- Main Menus Ends -->
+                </div>
+                <!-- Left sidebar Ends-->
+
+                <!-- Main Content Area -->
+                <div class="cen-main-content w3-left cen-fill-height cen-black-fade cen-tab-body cen-relative">
+                    <!-- tab container -->
+                    <div class="cen-tab-container cen-fill cen-black-fade cen-fill-height">
+                        <!--Page tab content/body-->
+                        <div class="cen-tab-body w3-fill-width cen-margin-top-0 cen-overflow-hidden cen-fill-height aim-tab-body cen-text-shadow-none" id="cen-main-tab-body">
+
+                            <!--Page tab Welcome-->
+                            <!-- Welcome Page-->
+                            <aim-widget TabContent TabLogo="handshake">
+                                <TabTitle>Welcome
+                                    <span class="cen-text-color cen-smaller">{{FN}} {{MN}} {{LN}}</span>
+                                </TabTitle>
+                                <TabHeaderButton></TabHeaderButton>
+                                    <div class="w3-container w3-text-dark-grey w3-padding cen-overflow-auto cen-fill-height--60 ">
+                                        <div class="w3-padding-small  fadeInUp animated  delay-0-1s">
+                                            <span class="cen-text-color w3-large">Good Day</span>
+                                            <br/>You can use the Start
+                                            <i class="fas fa-bars cen-text-color cen-bold"></i> Button to get Started. We got you covered </div>
+                                        <hr/>
+                                        <div class="w3-row">
+                                            <div class="w3-col m5  cen-padding-large cen-margin-buttom w3-center   fadeInUp animated  delay-0-2s">
+                                                
+                                                <div class="cen-fill-width cen-block cen-hover-none  cen-margin-auto  cen-page-menu-big">
+
+                                                    <img src="{{Passport}}" class="cen-block cen-square-large w3-circle cen-bg-color-fade cen-margin-auto w3-example"
+                                                    />
+                                                    <div class="cen-text-black-fade w3-center w3-large cen-bold cen-margin-top">{{FN}} {{MN}} {{LN}}</div>
+                                                    <div class="w3-center cen-text-color cen-margin-bottom">{{Email}}</div>
+                                                </div>
+                                            </div>
+                                            <div class="w3-col m7 cen-padding-large w3-leftbar cen-border-thin">
+                                            {{HomeInfo}}
+                                                <table class="w3-table w3-bordered   fadeInUp animated  delay-0-3s">
+                                                    {{ListInfo}}
+                                                    <tr>
+                                                        <td>{{Title}}: </td>
+                                                        <td class="cen-text-color cen-bold">{{Value}}</td>
+                                                    </tr>
+                                                    {{ListInfo}}
+                                                </table>
+                                                {{TabularInfo}}
+                                                <div class="w3-responsive w3-example w3-white w3-margin-top   fadeInUp animated  delay-0-4s">
+                                                    <table class="w3-table w3-bordered w3-border w3-text-grey cen-smaller">
+                                                        <thead>
+                                                            
+                                                            <tr class=" w3-text-grey w3-border-bottom cen-border-color-fade cen-border-thin w3-card">
+                                                                {{Head}}<th>{{?}}</th>{{Head}}
+                                                            </tr>
+                                                            
+                                                        </thead>
+                                                        <tbody>
+                                                            {{Body}}
+                                                            <tr>
+                                                                {{TData}}<td>{{?}}</td>{{TData}}
+                                                            </tr>
+                                                            {{Body}}
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                {{TabularInfo}}
+                                                {{HomeInfo}}
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="w3-container cen-fill-width w3-padding cen-padding-right-large w3-card w3-display-bottommiddle">
+                                        {{LogoutButton}}
+                                        <aim-widget Button ID="main-logout-btn" Logo="{{Logo}}" Title="{{Title}}" Text="{{Title}}" Class="{{Class}} w3-right w3-margin-right">
+                                            <AimAttr>
+                                                {{AimAttr}}
+                                                 {{Attr}}="{{Val}}"
+                                                {{AimAttr}}
+                                            </AimAttr>
+                                        </aim-widget>
+                                        {{LogoutButton}}
+                                        <div style="clear: both"></div>
+                                    </div>
+                            </aim-widget>
+                            <!--Page tab Welcome Ends-->
+                            <!-- Welcome Page Ends-->
+
+                        </div>
+
+                    </div>
+                    <!-- Welcome page tab container Ends-->
+                </div>
+
+                <!-- Right Sidebar -->
+                <div id="cen-summary-box" class="cen-side-width-large cen-dashboard w3-left cen-fill-height cen-black-fade w3-hide-medium w3-hide-small w3-animate-right cen-overflow-y-auto cen-overflow-x-hidden aim-tab">
+                    <!-- Headers -->
+                    <div class="cen-margin-small cen-padding-small" style="width:calc(100% - 6px); margin:auto">
+                        
+                        <div class="cen-fill-width aim-tab-head" aim-tab-active="cen-text-color-fade-min">
+                            <button class="w3-button w3-transparent w3-hover-none cen-hover-text-white-fade-min cen-text-white-fade cen-font-bigger cen-text-color-fade-min cen-right-sidebar-menu aim-tab-button"
+                                title="Summary">
+                                <i class="fas fa-tachometer-alt"></i>
+                            </button>
+                            <button class="w3-button w3-transparent w3-hover-none cen-hover-text-white-fade-min cen-text-white-fade cen-font-bigger cen-right-sidebar-menu aim-tab-button"
+                                title="My Account">
+                                <i class="fas fa-user"></i>
+                            </button>
+
+                            <button class="w3-button w3-transparent w3-hover-none cen-hover-text-white-fade-min cen-text-white-fade cen-font-bigger cen-right-sidebar-menu aim-tab-button"
+                                title="Themes">
+                                <i class="fas fa-images"></i>
+                            </button>
+
+                            <button class="w3-button w3-transparent w3-hover-none w3-hide-large cen-hover-text-white-fade-min cen-text-white-fade cen-font-bigger cen-clear-float w3-right cen-right-sidebar-menu aim-toggler aim-trigger"
+                                aim-toggler-target="cen-summary-box" aim-toggler-class="cen-show" title="Close">
+                                <i class="fas fa-times"></i>
+                            </button>
+
+                            <button class="w3-button w3-transparent w3-hover-none w3-hide-medium w3-hide-small cen-hover-text-white-fade-min cen-text-white-fade cen-font-bigger cen-clear-float w3-right cen-right-sidebar-menu aim-toggler aim-trigger cen-toggle-side-large"
+                                aim-toggler-target="aim-body" aim-toggler-class="cen-side-minimize" title="Open/Close Summary">
+                                <i class="fas fa-fw fa-chevron-right"></i>
+                            </button>
+
+                            <div style="clear:both"></div>
+
+                        </div>
+                        <hr class="cen-border-color cen-border-thick cen-margin-small">
+                        <div class="aim-tab-body">
+                            <!-- Statistics -->
+                            {{Statistics}}
+                            <div id="cen-stat-box" class="aim-tab-content cen-fill-width w3-animate-opacity cen-right-sidebar-cont aim-datafill aim-autoload"
+                                aim-src="{{Src}}" aim-refresh-rate="{{Refresh}}" aim-datafill-silent="true" aim-data="{{Data}}">
+                            </div>
+                            {{Statistics}}
+
+                            <!-- User account -->
+                            <div id="cen-user-account-box" class="aim-tab-content cen-fill-width w3-animate-opacity cen-right-sidebar-cont">
+                                <div class="w3-right-align w3-padding  cen-border-white-fade cen-fill-width cen-border-thick w3-bottombar">My Account</div>
+                                <div class="w3-center cen-margin-top">
+                                    <img src="{{Passport}}" ondblclick="this.Browse({MinSize:1000})" class="cen-align-middle cen-block cen-square w3-card-4 w3-circle cen-white-fade cen-margin-auto"
+                                    />
+                                    <div class="cen-padding-small cen-font-bigger">{{LoginName}}</div>
+                                    <div class="cen-text-color-fade-min">{{UserEmail}}</div>
+                                    <br />
+                                    {{Account}}
+                                    <aim-widget Button Text="" Logo="{{Logo}}" Title="{{Title}}" Class="{{Class}}" ColorClass="{{ColorClass}}">
+                                            <AimAttr>
+                                                {{AimAttr}}
+                                                {{Attr}}="{{Val}}"
+                                                {{AimAttr}}                                                
+                                            </AimAttr>
+                                        </aim-widget>
+                                    {{Account}}
+                                    <!--<aim-widget Button Text="" Logo="lock-open" Title="Change Password" Class="aim-datafill aim-trigger" ColorClass="cen-success">
+                                            <AimAttr> aim-src="root://ui/login/changepassw.aim"</AimAttr>
+                                        </aim-widget>
+                                        <aim-widget Button Text="" Logo="calculator" Title="Change PIN" Class="aim-datafill aim-trigger" ColorClass="cen-success">
+                                                <AimAttr> aim-src="root://ui/login/changepin.aim"</AimAttr>
+                                            </aim-widget>
+                                    <aim-widget Button Text="" Logo="sync-alt" Title="Reset Password" Class="aim-datafill aim-trigger">
+                                        <AimAttr> aim-src="root://ui/login/resetpassw.aim"</AimAttr>
+                                    </aim-widget>-->
+                                </div>
+                            </div>
+
+                            <!-- Theme -->
+                            <div id="cen-theme-box" class="aim-tab-content cen-fill-width w3-animate-opacity cen-right-sidebar-cont">
+                                <div class="w3-right-align w3-padding  cen-border-white-fade cen-fill-width cen-border-thick w3-bottombar">Themes</div>
+                                <input type="hidden" id="classlist" value="{{Themes}}cen-theme-{{Name}} {{Themes}}"/>
+                                <div class="w3-center w3-row-padding cen-cursor-pointer">
+                                        {{Themes}}
+                                    <div class="w3-col s4">
+                                        <aim-widget ThemeButton>
+                                            <ThemeName>{{Name}}</ThemeName>
+                                        </aim-widget>
+                                    </div>
+                                   {{Themes}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+            <!--The Main body Ends-->
+        </div>
+
+        <!--The Main Container Ends-->
+    </aim-section>
+
+    <aim-section Error>
+        <aim-alert MainAlert>
+            <aim-alert-title>Login Failed</aim-alert-title>
+            <aim-alert-body>
+                Oohps!!!,
+                <strong class="cen-text-color" style="text-transform: uppercase;">{{FN}} {{MN}} {{LN}}</strong>, look's like something went wrong.
+                <br /> {{Message}}
+                <br />
+                <br />
+                {{LoginFailedButton}}
+                <aim-widget Button Text="{{LFBText}}" Title="{{LFBText}}" Logo="{{LFBLogo}}" ColorClass="cen-success" Class="{{LFBClass}}">
+                    <AimAttr>
+                        {{LFBAttr}}
+                         {{Attr}}="{{Val}}"
+                        {{LFBAttr}}
+                    </AimAttr>
+                </aim-widget>
+                {{LoginFailedButton}}
+            </aim-alert-body>
+        </aim-alert>
+    </aim-section>

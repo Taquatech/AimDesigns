@@ -1,0 +1,17 @@
+<aim-local-data>
+    { 
+        "Logo":"wrench",
+        "Title":"Setup"
+     }
+</aim-local-data>
+<aim-tab-button>
+    <aim-widget TabButton Logo="{{Logo}}" Title="{{Title}}"></aim-widget>
+</aim-tab-button>
+<aim-page-title>{{Title}}</aim-page-title>
+<aim-widget TabContent TabTitle="{{Title}}" TabLogo="{{Logo}}">
+    <TabHeaderButton>
+        <aim-widget RoundButton Title="Close Tab" Class="w3-display-right aim-tab-close" Logo="times">
+        </aim-widget>
+    </TabHeaderButton>
+    <aim-import>@me://template/menus/cen-menus.aim</aim-import>
+</aim-widget>

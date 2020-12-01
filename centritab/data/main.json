@@ -1,0 +1,101 @@
+{
+    "_Note_":"/*Recommentations - 1:=>Update a copy of this data file, and place outside,below(alphabetical order) the centritab folder, for easy update of the centritab design without overwritting your set data. 2:=>the Themes can be set in a seperate file, and should be outside, below(alphabetical order) the centritab folder and the set data folder/file.*/ /*Definations - AppName:=>The full name of the application, AppAbbr:=> the abbrivation of the application name, AppSubName:=> Any other application name or short info, CopyRightYear:=>The display copy right year, Theme:=>Current theme, Passport:=>Current user passport, LoginName:=>Current User Name*/",
+    "AppName":"Aim Design Template",
+    "AppAbbr":"AIM",
+    "AppSubName":"Centritab Design",
+    "CopyRightYear":"2018",
+    "Theme":"cen-theme-city",
+    "Passport":"ui/centritab/images/resourse/logo.png",
+    "LoginName":"User",
+    "FullName":"Default User",
+    "UserEmail":"user@default.com",
+    "Themes":[{"Name":"city","Title":"City","Image":"me://images/resourse/snow.jpg","R":245, "G":23,"B":116}],
+"LoginAction":"root://ui/centritab/main/main.aim",
+"EmailText":"Email",
+"PasswordText":"P.word",
+"PINText":"OTP",
+"ActionContainer":"",
+"ActionContainer_login_box":"cen-login-box",
+"MainPage":"me://main/main.aim",
+"HomeScript":"",
+"MainScript":"",
+"LogoutPopup":"",
+    "Notification":{
+        "NotSrc":"",
+        "NotCount":"--",
+        "NotData":"",
+        "NotClass":"aim-datafill aim-trigger"
+    },
+    "TopIcons":[
+        {"Class":"cen-padding-left-0 w3-hide-medium w3-hide-small cen-padding-right-0 aim-toggler aim-trigger","Logo":"arrows-alt-v cen-rotate-45","Title":"Toggle Fullscreen","AimAttr":[
+            {"Attr":"aim-toggler-class","Val":"aim-fullscreen-mode"}
+            ]
+        }
+    ],
+    "LogoutButton":{
+        "Class":"aim-trigger aim-datafill","Logo":"power-off","Title":"Logout","AimAttr":[
+            {"Attr":"aim-src","Val":"me://login/logout.aim"},
+            {"Attr":"aim-container","Val":"sett"}
+            ]
+    },
+    "AccessButton":{
+        "ID":"cen-new-customer","Class":"aim-trigger aim-datafill","Logo":"plus","Title":"New Customer","AimAttr":[
+            {"Attr":"aim-src","Val":""},
+            {"Attr":"aim-container","Val":"cen-central-tab"},
+            {"Attr":"aim-data","Val":"new=1"},
+            {"Attr":"aim-datafill-update","Val":"true"}
+        ]
+    },
+    "Menus":[
+        {"Group":[
+            {"ID":"cen-deposit-menu","Logo":"archive","Title":"Deposit","Page":""},
+            {"ID":"cen-withdraw-menu","Logo":"money-bill-alt","Title":"Withdrawal","Page":""},
+            {"ID":"cen-transfer-menu","Logo":"exchange-alt","Title":"Transfer","Page":""},
+            {"ID":"cen-interbranch-menu","Logo":"code-branch","Title":"Inter-Branch","Page":""}
+        ]},
+        {"Group":[
+            {"ID":"cen-intproc-menu","Logo":"shield-alt","Title":"Internal Proccess","Page":""},
+            {"ID":"cen-customers-menu","Logo":"users","Title":"Customers","Page":""},
+            {"ID":"cen-reporting-menu","Logo":"file-alt","Title":"Reporting","Page":""},
+            {"ID":"cen-audit-menu","Logo":"list-alt","Title":"Audit","Page":""}
+        ]},
+        {"Group":[
+            {"ID":"cen-users-menu","Logo":"user-circle","Title":"Users","Page":""},
+            {"ID":"cen-setup-menu","Logo":"wrench","Title":"Setup","Page":""}
+        ]}
+    ],
+    "HomeInfo":{
+        "ListInfo":[
+            {"Title":"Title 1","Value":"Value 1"},
+            {"Title":"Title 2","Value":"Value 2"},
+            {"Title":"Title 3","Value":"Value 3"}
+        ],
+        "TabularInfo":{
+          "Head":["Header 1","Header 2","Hearder 3"],
+          "Body":[
+              {"TData":["Row 1 Column 1","Row 1 Column 2","Row 1 Column 3"]},
+              {"TData":["Row 2 Column 1","Row 2 Column 2","Row 2 Column 3"]},
+              {"TData":["Row 3 Column 1","Row 3 Column 2","Row 3 Column 3"]}
+          ]
+        }
+      },
+    "Statistics":{
+        "Src":"me://main/stats.aim","Refresh":"0","Data":"StatID=1"
+    },
+    "Account":[
+        {"Logo":"lock-open","Title":"Change Password","Class":"aim-datafill aim-trigger","ColorClass":"cen-success","AimAttr":[
+            {"Attr":"aim-src","Val":""}
+        ]},{"Logo":"calculator","Title":"Change PIN","Class":"aim-datafill aim-trigger","ColorClass":"cen-success","AimAttr":[
+            {"Attr":"aim-src","Val":""}
+        ]},{"Logo":"sync-alt","Title":"Reset Password","Class":"aim-datafill aim-trigger","ColorClass":"","AimAttr":[
+            {"Attr":"aim-src","Val":""}
+        ]}
+    ],
+    "LoginFailedButton":{
+        "LFBText":"Reset PIN","LFBLogo":"sync-alt","LFBClass":"aim-datafill aim-trigger aim-focus","LFBAttr":[
+            {"Attr":"aim-src","Val":""}
+        ]
+    },
+    "MaxUploadSize":60000
+    
+}

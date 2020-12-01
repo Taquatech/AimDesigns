@@ -1,0 +1,12 @@
+<% #LogoutPopup %>
+<aim-alert MainAlert>
+ <aim-alert-title>
+ <i id="cen-alert-icon" class="fas fa-sign-out"></i> Logout
+ </aim-alert-title>
+ <aim-alert-body>
+   <span class="cen-text-color cen-bold">{{LoginName}}</span>, Are sure you want to logout?<br /><br />
+      <aim-widget Button Text="Yes, I realy want to logout" Title="Logout" Logo="thumbs-up" ColorClass="cen-success" Class="aim-datafill aim-trigger aim-toggler aim-focus">
+          <AimAttr>aim-toggler-hide="MainAlert" aim-src="me://home.aim" aim-container="aim-body"</AimAttr>
+      </aim-widget>
+    </aim-alert-body>
+  </aim-alert>

@@ -1,0 +1,15 @@
+<aim-local-data>
+    { 
+        "Logo":"wrench",
+        "Title":"Setup"
+    ] }
+</aim-local-data>
+<aim-alert Dialog>
+    <aim-alert-title><i class="fas fa-{{Logo}}"></i> {{Title}}</aim-alert-title>
+    <aim-alert-body>
+        <aim-import>@me://template/menus/cen-menus.aim</aim-import>
+    </aim-alert-body>
+</aim-alert>
+
+
+

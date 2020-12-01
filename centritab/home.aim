@@ -1,0 +1,21 @@
+<% #HomeScript %>
+<aim-page-title>{{AppName}}</aim-page-title>  
+    <aim-body-attribute>class="w3-text-white {{Theme}} cen-minimize-menu"</aim-body-attribute>
+    <!-- Login Markup -->
+    <div id="cen-login-cont" class="aim-datafill w3-show w3-overlay w3-animate-opacity w3-display-container cen-black-fade">
+        <!-- Middle Login Pannel -->
+        <div class="w3-display-middle w3-mobile w3-padding" style="width:auto">
+            <div class="w3-animate-zoom w3-center">
+                <!-- Middle Login Header -->
+                <h1 class="w3-jumbo cen-margin-bottom-0 cen-text-color cen-text-shadow" title="{{AppName}}" style="line-height:0.8">{{AppAbbr}}</h1>
+                <h1 class="w3-xlarge cen-margin-top-0 cen-margin-bottom">{{AppSubName}}</h1>
+                <div id="cen-login-box" style="width:300px" class="aim-datafill aim-autoload  w3-mobile cen-margin-auto" aim-src="me://login/email.aim">
+                   
+                </div>
+               
+                <div class="w3-small w3-margin-top">&copy; {{CopyRightYear}}
+                    <span class="cen-text-color">{{AppName}}</span>
+                </div>
+            </div>
+        </div>
+    </div>

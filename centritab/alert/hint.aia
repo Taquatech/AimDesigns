@@ -1,0 +1,13 @@
+<% #Hint %>
+ <!-- Alert -->
+            <div id="cen-alert-hint" class="w3-card w3-mobile w3-animate-bottom cen-alert-hint w3-text-dark-grey">
+              <div class="cen-alert-hint-content">
+                <div class="cen-alert-hint-title cen-text-color">{{aim-alert-title}}</div>
+                <div class="cen-alert-hint-body">{{aim-alert-body}}</div>
+              </div>  
+              <div class="cen-alert-hint-others">
+                <button class="cen-alert-hint-close cen-text-color aim-toggler aim-trigger aim-autoload" aim-autoload-delay="5" aim-toggler-hide="Hint"><i class="fas fa-times"></i></button>
+              </div>
+                
+            </div>
+   <!-- Alert End -->

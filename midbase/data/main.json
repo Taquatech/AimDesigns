@@ -1,0 +1,21 @@
+{
+    "AppName":"MidBase",
+    "Menus":[
+        {"Group":[
+            {"ID":"mid-menu-dashboard","Logo":"mbri-home w3-text-white","Title":"Dashboard","Attr":"","Class":"aprs-active"},
+            {"ID":"mid-menu-new","Logo":"mbri-plus w3-text-indigo","Title":"New","Attr":"","Class":""},
+            {"ID":"mid-menu-recent","Logo":"mbri-clock w3-text-pink","Title":"Recent","Attr":"","Class":""}
+        ]},
+        {"Group":[
+            {"ID":"mid-menu-logout","Logo":"mbri-logout w3-text-cyan","Title":"Logout","Attr":"aim-src=\"me://home.aim\" aim-container=\"aim-body\" ","Class":"aim-datafill aim-trigger"},
+            {"ID":"mid-menu-setting","Logo":"mbri-setting w3-text-orange","Title":"Settings","Attr":"","Class":""}
+        ]}
+    ],
+    "Header":{
+        "Logo":"mbri-home",
+        "Title":"Dashboard"
+    },
+    "AppLogo":"aim://me://images/iconsm.png",
+    "AppBaseColor":"rgb(25, 34, 89)",
+    "AppForeColor":"rgb(240, 136, 45)"
+}

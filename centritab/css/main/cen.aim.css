@@ -1,0 +1,857 @@
+@import "https://fonts.googleapis.com/css?family=Hind+Vadodara";
+
+/*Centritab Design CSS 2018*/
+body,.cen-bg{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Hind Vadodara', 'Segoe UI',Tahoma, Geneva, Verdana, sans-serif !important;
+}
+.cen-text-shadow,.cen-bg{
+    text-shadow: 1px 1px 1px rgb(24, 24, 24);
+    text-shadow: 1px 1px 1px rgba(24, 24, 24, 0.533)
+}
+.cen-text-shadow-none{text-shadow: none!important}
+
+.cen-bg{
+    background-attachment: inherit;
+}
+.cen-theme-ind i{display:none}
+/*Centritab Themes*/
+/**************************************/
+
+{{Themes}}
+            /*----------Theme-----------*/
+            /*Bg Image*/
+            .cen-theme-{{Name}}{background-image: url({{Image}});}
+            /*text color*/
+            .cen-theme-{{Name}} .cen-text-color,
+            .cen-theme-{{Name}} .cen-active,.cen-theme-{{Name}} .cen-active:hover,
+            .cen-theme-{{Name}} .cen-hover-text-color:hover,
+            .cen-theme-{{Name}} .cen-focus-text-color:focus, 
+            .cen-theme-{{Name}} .cen-text-color-fade,
+            .cen-theme-{{Name}} .cen-hover-text-color-fade:hover,
+            .cen-theme-{{Name}} .cen-focus-text-color-fade:focus, 
+            .cen-theme-{{Name}} .cen-text-color-fade-min,
+            .cen-theme-{{Name}} .cen-hover-text-color-fade-min:hover,
+            .cen-theme-{{Name}} .cen-focus-text-color-fade-min:focus, 
+            .cen-theme-{{Name}} .cen-text-color-fade-max,
+            .cen-theme-{{Name}} .cen-hover-text-color-fade-max:hover,
+            .cen-theme-{{Name}} .cen-focus-text-color-fade-max:focus{color:rgb({{R}}, {{G}}, {{B}})!important}
+            
+            /*text color fade*/
+            .cen-theme-{{Name}} .cen-text-color-fade,
+            .cen-theme-{{Name}} .cen-hover-text-color-fade:hover,
+            .cen-theme-{{Name}} .cen-focus-text-color-fade:focus{color:rgba({{R}}, {{G}}, {{B}}, 0.533)!important}
+            /*text color fade min*/
+            .cen-theme-{{Name}} .cen-text-color-fade-min,
+            .cen-theme-{{Name}} .cen-hover-text-color-fade-min:hover,
+            .cen-theme-{{Name}} .cen-focus-text-color-fade-min:focus{color:rgba({{R}}, {{G}}, {{B}}, 0.8)!important}
+            /*text color fade max*/
+            .cen-theme-{{Name}} .cen-text-color-fade-max,
+            .cen-theme-{{Name}} .cen-hover-text-color-fade-max:hover,
+            .cen-theme-{{Name}} .cen-focus-text-color-fade-max:focus{color:rgba({{R}}, {{G}}, {{B}}, 0.267)!important}
+            
+            /*bg color*/
+            .cen-theme-{{Name}} .cen-bg-color,.cen-{{Name}},
+            .cen-theme-{{Name}} .cen-hover-bg-color:hover,
+            .cen-theme-{{Name}} .cen-focus-bg-color:focus,
+            .cen-theme-{{Name}} .cen-switch input:checked ~ .cen-switch-nob,
+            .cen-theme-{{Name}} .cen-bg-color-fade,
+            .cen-theme-{{Name}} .cen-hover-bg-color-fade:hover,
+            .cen-theme-{{Name}} .cen-focus-bg-color-fade:focus,
+            .cen-theme-{{Name}} .cen-bg-color-fade-max,
+            .cen-theme-{{Name}} .cen-checkbox:hover input ~ .cen-check-logo,
+            .cen-theme-{{Name}} .cen-checkbox input:checked ~ .cen-check-logo,
+            .cen-theme-{{Name}} .cen-hover-bg-color-fade-max:hover,
+            .cen-theme-{{Name}} .cen-focus-bg-color-fade-max:focus,
+            .cen-theme-{{Name}} .cen-switch input:checked ~ .cen-switch-bar,
+            .cen-theme-{{Name}} .cen-bg-color-fade-min,
+            .cen-theme-{{Name}} .cen-hover-bg-color-fade-min:hover,
+            .cen-theme-{{Name}} .cen-focus-bg-color-fade-min:focus{background-color:rgb({{R}}, {{G}}, {{B}})!important;color: rgb(255, 255, 255)!important;text-shadow: 1px 1px 1px rgb(24, 24, 24);text-shadow: 1px 1px 1px rgba(24, 24, 24, 0.533)}
+            /*bg color fade*/
+            .cen-theme-{{Name}} .cen-bg-color-fade,
+            .cen-theme-{{Name}} .cen-hover-bg-color-fade:hover,
+            .cen-theme-{{Name}} .cen-focus-bg-color-fade:focus{background-color:rgba({{R}}, {{G}}, {{B}}, 0.533)!important;color: rgb(255, 255, 255)!important;}
+            /*bg color fade max*/
+            .cen-theme-{{Name}} .cen-bg-color-fade-max,
+            .cen-theme-{{Name}} .cen-checkbox:hover input ~ .cen-check-logo,
+            .cen-theme-{{Name}} .cen-checkbox input:checked ~ .cen-check-logo,
+            .cen-theme-{{Name}} .cen-hover-bg-color-fade-max:hover,
+            .cen-theme-{{Name}} .cen-focus-bg-color-fade-max:focus,
+            .cen-theme-{{Name}} .cen-switch input:checked ~ .cen-switch-bar{background-color:rgba({{R}}, {{G}}, {{B}}, 0.267)!important;color: rgb(255, 255, 255)!important;}
+            /*bg color fade min*/
+            .cen-theme-{{Name}} .cen-bg-color-fade-min,
+            .cen-theme-{{Name}} .cen-hover-bg-color-fade-min:hover,
+            .cen-theme-{{Name}} .cen-focus-bg-color-fade-min:focus{background-color:rgba({{R}}, {{G}}, {{B}}, 0.8)!important;color: rgb(255, 255, 255)!important;}
+            /*border color*/ 
+            .cen-theme-{{Name}} .cen-border-color,.cen-{{Name}}-border,
+            .cen-theme-{{Name}} .cen-hover-border-color:hover,
+            .cen-theme-{{Name}} .cen-focus-border-color:focus,
+            .cen-theme-{{Name}} .cen-border-color-fade,.cen-{{Name}}-border-fade,
+            .cen-theme-{{Name}} .cen-hover-border-color-fade:hover,
+            .cen-theme-{{Name}} .cen-focus-border-color-fade:focus{border-color:rgb({{R}}, {{G}}, {{B}})!important}
+            /*border Color Fade*/
+            .cen-theme-{{Name}} .cen-border-color-fade,.cen-{{Name}}-border-fade,
+            .cen-theme-{{Name}} .cen-hover-border-color-fade:hover,
+            .cen-theme-{{Name}} .cen-focus-border-color-fade:focus{border-color:rgba({{R}}, {{G}}, {{B}}, 0.533)!important}
+            
+            /*Theme Selector*/
+            .cen-theme-{{Name}} .cen-theme-{{Name}} .cen-theme-ind i{display:inline}
+            
+            /*Aim Printer Color*/
+            .cen-theme-{{Name}} .aim-printer-bg-color{background-color: rgb({{R}}, {{G}}, {{B}})!important}
+            .cen-theme-{{Name}} .aim-printer-text-color{color: rgb({{R}}, {{G}}, {{B}})!important}
+
+            
+/*theme Background Color*/
+.cen-theme-{{Name}} .cen-bg-color{
+    color: rgb(255, 255, 255)!important;
+}
+            /*----------Theme End-----------*/
+{{Themes}}
+
+/****************Theme End**********************/
+
+/*White bg color / fades*/
+.cen-white,
+.cen-hover-white:hover,
+.cen-focus-white:focus{background-color: rgb(255, 255, 255)!important}
+.cen-white-fade,
+.cen-hover-white-fade:hover,
+.cen-focus-white-fade:focus{background-color:rgba(255, 255, 255, 0.533)!important}
+.cen-white-fade-max,
+.cen-hover-white-fade-max:hover,
+.cen-focus-white-fade-max:focus{background-color:rgba(255, 255, 255, 0.267)!important}
+.cen-white-fade-min,
+.cen-hover-white-fade-min:hover,
+.cen-focus-white-fade-min:focus{background-color:rgba(255, 255, 255, 0.8)!important}
+.cen-white-fade-ext,
+.cen-hover-white-fade-ext:hover,
+.cen-focus-white-fade-ext:focus{background-color:rgba(255, 255, 255, 0.133)!important}
+.cen-white-fade-mac,
+.cen-hover-white-fade-mac:hover,
+.cen-focus-white-fade-mac:focus{background-color:rgba(255, 255, 255, 0.933)!important}
+
+/*White text color / fades*/
+.cen-text-white,.cen-hover-text-white:hover{color:rgb(255, 255, 255)!important}
+.cen-text-white-fade,
+.cen-hover-text-white-fade:hover,
+.cen-focus-text-white-fade:focus{color:rgba(255, 255, 255, 0.533)!important}
+.cen-text-white-fade-max,
+.cen-hove-textr-white-fade-max:hover,
+.cen-focus-text-white-fade-max:focus{color:rgba(255, 255, 255, 0.267)!important}
+.cen-text-white-fade-min,
+.cen-hover-text-white-fade-min:hover,
+.cen-focus-text-white-fade-min:focus{color:rgba(255, 255, 255, 0.8)!important}
+
+/*Black bg color / fades*/
+.cen-black,
+.cen-hover-black:hover,
+.cen-focus-black:focus{background-color: rgb(0, 0, 0)!important}
+.cen-black-fade,
+.cen-hover-black-fade:hover,
+.cen-focus-black-fade:focus{background-color:rgba(0, 0, 0, 0.533)!important}
+.cen-black-fade-max,
+.cen-hover-black-fade-max:hover,
+.cen-focus-black-fade-max:focus{background-color:rgba(0, 0, 0, 0.267)!important}
+.cen-black-fade-min,
+.cen-hover-black-fade-min:hover,
+.cen-focus-black-fade-min:focus{background-color:rgba(0, 0, 0, 0.8)!important}
+.cen-black-fade-ext,
+.cen-hover-black-fade-ext:hover,
+.cen-focus-black-fade-ext:focus{background-color:rgba(0, 0, 0, 0.133)!important}
+.cen-black-fade-mac,
+.cen-hover-black-fade-mac:hover,
+.cen-focus-black-fade-mac:focus{background-color:rgba(0, 0, 0, 0.933)!important}
+
+/*Black text color / fades*/
+.cen-text-black{color:rgb(0, 0, 0)!important}
+.cen-text-black-fade,
+.cen-hover-text-black-fade:hover,
+.cen-focus-text-black-fade:focus{color:rgba(0, 0, 0, 0.533)!important}
+.cen-text-black-fade-max,
+.cen-hover-text-black-fade-max:hover,
+.cen-focus-text-black-fade-max:focus{color:rgba(0, 0, 0, 0.267)!important}
+.cen-text-black-fade-min,
+.cen-hover-text-black-fade-min:hover,
+.cen-focus-text-black-fade-min:focus{color:rgba(0, 0, 0, 0.8)!important;}
+
+
+
+.cen-hover-none:hover{background-color: initial}
+/* Font size */
+.cen-jumbo{font-size: 24px}.cen-small{font-size: 12px}.cen-smaller{font-size: 0.85em!important}.cen-tiny{font-size: 6px}.cen-font-light,.cen-light{font-weight: lighter}.cen-font-bigger,.cen-bigger{font-size: 1.3em}.cen-bold{font-weight: bold}.cen-masive{font-size: 160px}
+
+.cen-uppercase{text-transform: uppercase}.cen-lowercase{text-transform: lowercase}
+
+/*Margin*/
+.cen-margin-0{margin: 0px}.cen-margin-top-0{margin-top: 0px}.cen-margin-left-0{margin-left: 0px}.cen-margin-right-0{margin-right: 0px}.cen-margin-bottom-0{margin-bottom: 0px}.cen-margin-bottom{margin-bottom: 20px!important}.cen-margin-top{margin-top:20px!important}.cen-margin-left{margin-left:20px}.cen-margin-right{margin-right:20px!important}.cen-margin-left-small,.cen-margin-side-small,.cen-margin-small{margin-left: 3px}.cen-margin-right-small,.cen-margin-side-small,.cen-margin-small{margin-right: 3px}.cen-margin-top-small,.cen-margin-small{margin-top:3px}.cen-margin-bottom-small,.cen-margin-small{margin-bottom:3px}.cen-margin-top-10,.cen-margin-10{margin-top:10px}.cen-margin-bottom-10,.cen-margin-10{margin-bottom:10px}.cen-margin-left-10,.cen-margin-10{margin-left:10px}.cen-margin-right-10,.cen-margin-10{margin-right:10px}.cen-margin-auto{margin: auto}
+
+/*Padding*/
+.cen-padding-0{padding: 0px!important}.cen-padding-top-0{padding-top: 0px!important}.cen-padding-left-0{padding-left: 0px!important}.cen-padding-right-0{padding-right: 0px!important}.cen-padding-bottom-0{padding-bottom: 0px!important}.cen-padding-small{padding: 3px}.cen-padding-top-small{padding-top: 3px!important}.cen-padding-bottom-small{padding-bottom: 3px!important}.cen-padding-bottom{padding-bottom: 9px!important}.cen-padding-side-small{padding-left: 3px!important; padding-right: 3px!important}.cen-padding{padding: 9px!important}.cen-padding-large{padding: 16px!important}.cen-padding-left-large{padding-left: 16px!important}.cen-padding-right-large{padding-right: 20px!important}.cen-padding-left{padding-left: 9px!important}.cen-padding-top{padding-top: 9px!important}
+
+/*Displays*/
+.cen-block{display: block}.cen-inline{display: inline}.cen-inline-block{display: inline-block}.cen-align-top{vertical-align: top}.cen-align-middle{vertical-align: middle}.cen-align-bottom{vertical-align: bottom}
+.cen-hover-display .cen-hover-object, .cen-hover-display .cen-hover-object-inline{display: none}.cen-hover-display:hover .cen-hover-object{display: block}.cen-hover-display:hover .cen-hover-object-inline{display: inline}
+
+/*Positioning*/
+.cen-absolute{position: absolute}.cen-relative{position: relative}.cen-fixed{position: fixed;z-index: 2}
+
+/*dimensions*/
+.cen-fill,.cen-stretch{width: 100%;height: 100%}.cen-fill-width{width: 100%}.cen-stretch{top:0px;right: 0px;left: 0px;bottom: 0px}.cen-fill-height{height: 100%!important}.cen-fill-width--60{width:calc(100% - 60px)}.cen-fill-width--100{width:calc(100% - 100px)}.cen-height-30,.cen-square-tiny{height: 30px}.cen-width-100{width: 100px}.cen-width-30,.cen-square-tiny{width: 30px}.cen-fill-width--30{width:calc(100% - 30px)}.cen-square-micro,.cen-width-micro{width:5px}.cen-square-micro,.cen-height-micro{height:5px}
+/* Squares */
+.cen-square-small{width:100px;height:100px;}.cen-square-60,.cen-width-60{width:60px}.cen-square-60,.cen-height-60{height:60px;}.cen-square-40,.cen-height-40{height:40px;}.cen-square-40,.cen-width-40{width:40px;}.cen-square-50,.cen-width-50{width:50px}.cen-square-50,.cen-height-50{height:50px;}.cen-square-20,.cen-width-20{width:20px}.cen-square-20,.cen-height-20{height:20px;}.cen-square-10,.cen-width-10{width:10px}.cen-square-10,.cen-height-10{height:10px;}.cen-square{width:150px;height:150px;}.cen-height--60,.cen-fill-height--60{height:calc(100% - 60px);}.cen-height--40,.cen-fill-height--40{height:calc(100% - 40px);}.cen-height--50,.cen-fill-height--50{height:calc(100% - 50px);}.cen-fill-height--20{height:calc(100% - 20px);}.cen-fill-height--100{height:calc(100% - 100px);}.cen-square-large{width:200px;height:200px;}
+
+/*Overflows*/
+.cen-overflow-auto{overflow: auto}.cen-overflow-visible{overflow: visible}.cen-overflow-hidden,.cen-hover-overflow-auto{overflow: hidden}.cen-overflow-x-visible{overflow-x: visible}.cen-overflow-x-auto{overflow-x: auto}.cen-overflow-x-hidden,.cen-hover-overflow-x-auto{overflow-x: hidden}.cen-overflow-y-visible{overflow-y: visible}.cen-overflow-y-auto{overflow-y: auto}.cen-overflow-y-hidden{overflow-y: hidden}.cen-hover-overflow-auto:hover{overflow: auto}.cen-hover-overflow-x-auto:hover{overflow-x: auto}.cen-hover-overflow-y-auto:hover{overflow-y: auto}
+
+/*Borders*/
+.cen-border{border:white thin solid}.cen-border-0{border:none}.cen-border-left-right{border-left:white thin solid;border-right:white thin solid}
+.cen-border-dashed{border-style: dashed !important;}
+.cen-border-white,.cen-hover-border-white:hover,.cen-focus-border-white:focus,
+.cen-border-white-fade,
+.cen-hover-border-white-fade:hover,
+.cen-focus-border-white-fade:focus,
+.cen-border-white-fade-max,
+.cen-hover-border-white-fade-max:hover,
+.cen-focus-border-white-fade-max:focus{border-color: rgb(255, 255, 255)!important}
+.cen-border-white-fade,
+.cen-hover-border-white-fade:hover,
+.cen-focus-border-white-fade:focus{border-color: rgba(255, 255, 255, 0.533)!important}.cen-border-thick{ border-width: 2px!important}.cen-border-thin{ border-width: thin!important}
+.cen-border-white-fade-max,
+.cen-hover-border-white-fade-max:hover,
+.cen-focus-border-white-fade-max:focus{border-color: rgba(255, 255, 255, 0.133)!important}.cen-border-thick{ border-width: 2px!important}.cen-border-thin{ border-width: thin!important}
+.cen-border-black,.cen-hover-border-black:hover,.cen-focus-border-black:focus,
+.cen-border-black-fade,
+.cen-hover-border-black-fade:hover,
+.cen-focus-border-black-fade:focus{border-color: rgb(0, 0, 0)!important}
+.cen-border-black-fade,
+.cen-hover-border-black-fade:hover,
+.cen-focus-border-black-fade:focus{border-color: rgba(0, 0, 0, 0.533)!important}.cen-border-light-grey{border-color: #e4e4e4!important;color: rgb(224, 165, 38))}
+
+.cen-round{border-radius: 8px!important}.cen-round-large{border-radius: 16px}.cen-round-small{border-radius: 3px}
+.cen-round-top{border-radius: 8px 8px 0px 0px}.cen-round-top-large{border-radius: 16px 16px 0px 0px}.cen-round-top-small{border-radius: 3px 3px 0px 0px}
+.cen-round-bottom{border-radius:0px 0px 8px 8px }.cen-round-bottom-small{border-radius:0px 0px 3px 3px }.cen-round-bottom-large{border-radius:0px 0px 16px 16px }
+.cen-round-left{border-radius:8px 0px 0px 8px }.cen-round-left-small{border-radius:3px 0px 0px 3px }.cen-round-left-large{border-radius:16px 0px 0px 16px }
+.cen-round-right{border-radius:0px 8px 8px 0px }.cen-round-right-small{border-radius:0px 3px 3px 0px }.cen-round-right-large{border-radius:0px 16px 16px 0px }
+.cen-round-top-left{border-top-left-radius:8px }.cen-round-top-right{border-top-right-radius:8px }.cen-round-bottom-left{border-bottom-left-radius:8px }.cen-round-bottom-right{border-bottom-right-radius:8px }.cen-round-top-left-large{border-top-left-radius:16px }.cen-round-top-right-large{border-top-right-radius:16px }.cen-round-bottom-left-large{border-bottom-left-radius:16px }.cen-round-bottom-right-large{border-bottom-right-radius:16px }
+
+/*Shadows*/
+.cen-shadow-white{
+    box-shadow:0 2px 5px 0 rgb(255,255,255),0 2px 10px 0 rgb(255,255,255);
+    box-shadow:0 2px 5px 0 rgba(255,255,255,0.16),0 2px 10px 0 rgba(255,255,255,0.12);
+}
+
+.cen-shadow-black{
+    box-shadow:0 2px 4px 0 rgb(0,0,0),0 2px 10px 0 rgb(0,0,0);
+    box-shadow:0 2px 4px 0 rgba(0,0,0,0.7),0 2px 10px 0 rgba(0,0,0,0.7);
+}
+
+
+/*Text special colors*/
+.cen-text-success,
+.cen-hover-text-success:hover,
+.cen-focus-text-success:focus,
+.cen-text-success-fade,
+.cen-hover-text-success-fade:hover,
+.cen-focus-text-success-fade:focus{color: rgb(91, 160, 7)!important}
+
+.cen-text-danger,
+.cen-hover-text-danger:hover,
+.cen-focus-text-danger:focus,
+.cen-text-danger-fade,
+.cen-hover-text-danger-fade:hover,
+.cen-focus-text-danger-fade:focus{color: rgb(211, 51, 11)!important}
+
+.cen-text-success-fade,
+.cen-hover-text-success-fade:hover,
+.cen-focus-text-success-fade:focus{color: rgba(91, 160, 7, 0.267)!important}
+
+.cen-text-danger-fade,
+.cen-hover-text-danger-fade:hover,
+.cen-focus-text-danger-fade:focus{color: rgba(211, 51, 11, 0.267)!important}
+
+.cen-success,
+.cen-hover-success:hover,
+.cen-focus-success:focus,
+.cen-success-fade,
+.cen-hover-success-fade:hover,
+.cen-focus-success-fade:focus,.cen-success-fade-min,
+.cen-hover-success-fade-min:hover,
+.cen-focus-success-fade-min:focus{background-color: rgb(91, 160, 7)!important;text-shadow: 1px 1px 1px rgb(24, 24, 24);text-shadow: 1px 1px 1px rgba(24, 24, 24, 0.533)}
+
+.cen-danger,
+.cen-hover-danger:hover,
+.cen-focus-danger:focus,
+.cen-danger-fade,
+.cen-hover-danger-fade:hover,
+.cen-focus-danger-fade:focus,
+.cen-danger-fade-min,
+.cen-hover-danger-fade-min:hover,
+.cen-focus-danger-fade-min:focus{background-color: rgb(211, 51, 11)!important;text-shadow: 1px 1px 1px rgb(24, 24, 24);text-shadow: 1px 1px 1px rgba(24, 24, 24, 0.533)}
+
+.cen-success-fade,
+.cen-hover-success-fade:hover,
+.cen-focus-success-fade:focus{background-color: rgba(91, 160, 7, 0.267)!important;text-shadow: 1px 1px 1px rgb(24, 24, 24);text-shadow: 1px 1px 1px rgba(24, 24, 24, 0.533)}
+
+.cen-danger-fade,
+.cen-hover-danger-fade:hover,
+.cen-focus-danger-fade:focus{background-color: rgba(211, 51, 11, 0.267)!important;text-shadow: 1px 1px 1px rgb(24, 24, 24);text-shadow: 1px 1px 1px rgba(24, 24, 24, 0.533)}
+
+.cen-success-fade-min,
+.cen-hover-success-fade-min:hover,
+.cen-focus-success-fade-min:focus{background-color: rgba(91, 160, 7, 0.8)!important;text-shadow: 1px 1px 1px rgb(24, 24, 24);text-shadow: 1px 1px 1px rgba(24, 24, 24, 0.533)}
+
+.cen-danger-fade-min,
+.cen-hover-danger-fade-min:hover,
+.cen-focus-danger-fade-min:focus{background-color: rgba(211, 51, 11, 0.8)!important;text-shadow: 1px 1px 1px rgb(24, 24, 24);text-shadow: 1px 1px 1px rgba(24, 24, 24, 0.533)}
+
+
+.cen-border-success,
+.cen-hover-border-success:hover,
+.cen-focus-border-success:focus,
+.cen-border-success-fade,
+.cen-hover-border-success-fade:hover,
+.cen-focus-border-success-fade:focus{border-color: rgb(91, 160, 7)!important}
+
+.cen-border-danger,
+.cen-hover-border-danger:hover,
+.cen-focus-border-danger:focus,
+.cen-border-danger-fade,
+.cen-hover-border-danger-fade:hover,
+.cen-focus-border-danger-fade:focus{border-color: rgb(211, 51, 11)!important}
+
+.cen-border-success-fade,
+.cen-hover-border-success-fade:hover,
+.cen-focus-border-success-fade:focus{border-color: rgba(91, 160, 7, 0.267)!important}
+
+.cen-border-danger-fade,
+.cen-hover-border-danger-fade:hover,
+.cen-focus-border-danger-fade:focus{border-color: rgba(211, 51, 11, 0.267)!important}
+
+/*Transitions*/
+/*text Color*/
+.cen-text-success,
+.cen-hover-text-success:hover,
+.cen-focus-text-success:focus,
+
+.cen-text-danger,
+.cen-hover-text-danger:hover,
+.cen-focus-text-danger:focus,
+
+.cen-text-success-fade,
+.cen-hover-text-success-fade:hover,
+.cen-focus-text-success-fade:focus,
+
+.cen-text-danger-fade,
+.cen-hover-text-danger-fade:hover,
+.cen-focus-text-danger-fade:focus,
+
+.cen-text-color,
+.cen-hover-text-color:hover,
+.cen-focus-text-color:focus,
+
+.cen-text-color-fade,
+.cen-text-color-fade-min,
+.cen-text-color-fade-max,
+.cen-hover-text-color-fade:hover,
+.cen-hover-text-color-fade-min:hover,
+.cen-hover-text-color-fade-max:hover,
+.cen-focus-text-color-fade:focus,
+.cen-focus-text-color-fade-min:focus,
+.cen-focus-text-color-fade-max:focus,
+
+.cen-text-white,
+.cen-text-white-fade,
+.cen-text-white-fade-max,
+.cen-text-white-fade-min,
+.cen-hover-text-white:hover,
+.cen-hover-text-white-fade:hover,
+.cen-hover-text-white-fade-max:hover,
+.cen-hover-text-white-fade-min:hover,
+.cen-focus-text-white:focus,
+.cen-focus-text-white-fade:focus,
+.cen-focus-text-white-fade-max:focus,
+.cen-focus-text-white-fade-min:focus,
+
+.cen-text-black,
+.cen-text-black-fade,
+.cen-text-black-fade-max,
+.cen-text-black-fade-min,
+.cen-hover-text-black:hover,
+.cen-hover-text-black-fade:hover,
+.cen-hover-text-black-fade-max:hover,
+.cen-hover-text-black-fade-min:hover,
+.cen-focus-text-black:focus,
+.cen-focus-text-black-fade:focus,
+.cen-focus-text-black-fade-max:focus,
+.cen-focus-text-black-fade-min:focus,
+{
+    transition:color 0.6s;
+    color: #06d37a
+}
+
+/*Border Color*/
+.cen-border-success,
+.cen-hover-border-success:hover,
+.cen-focus-border-success:focus,
+
+.cen-border-danger,
+.cen-hover-border-danger:hover,
+.cen-focus-border-danger:focus,
+
+.cen-border-success-fade,
+.cen-hover-border-success-fade:hover,
+.cen-focus-border-success-fade:focus,
+
+.cen-border-danger-fade,
+.cen-hover-border-danger-fade:hover,
+.cen-focus-border-danger-fade:focus
+
+.cen-border-white,
+.cen-border-white-fade,
+.cen-hover-border-white-fade:hover,
+.cen-focus-border-white-fade:focus{
+    transition:border-color 0.6s;
+}
+/*Backgrond Colors Color*/
+.cen-bg-color,
+.cen-bg-color-fade,
+.cen-bg-color-fade-min,
+.cen-bg-color-fade-max,
+.cen-hover-bg-color:hover,
+.cen-focus-bg-color:focus,
+.cen-hover-bg-color-fade:hover,
+.cen-focus-bg-color-fade:focus,
+.cen-hover-bg-color-fade-min:hover,
+.cen-focus-bg-color-fade-min:focus,
+.cen-hover-bg-color-fade-max:hover,
+.cen-focus-bg-color-fade-max:focus,
+
+.cen-white,
+.cen-white-fade,
+.cen-white-fade-min,
+.cen-white-fade-max,
+.cen-hover-white:hover,
+.cen-hover-white-fade:hover,
+.cen-hover-white-fade-max:hover,
+.cen-hover-white-fade-min:hover,
+.cen-focus-white:focus,
+.cen-focus-white-fade:focus,
+.cen-focus-white-fade-max:focus,
+.cen-focus-white-fade-min:focus,
+
+.cen-black,
+.cen-black-fade,
+.cen-black-fade-min,
+.cen-black-fade-max,
+.cen-hover-black:hover,
+.cen-hover-black-fade:hover,
+.cen-hover-black-fade-max:hover,
+.cen-hover-black-fade-min:hover
+.cen-focus-black:focus,
+.cen-focus-black-fade:focus,
+.cen-focus-black-fade-max:focus,
+.cen-focus-black-fade-min:focus{
+    transition:background-color 0.6s;
+}
+
+/*Transformations*/
+.cen-rotate-90{transform:rotate(90deg)}.cen-rotate-45{transform:rotate(45deg)}.cen-rotate-30{transform:rotate(30deg)}.cen-rotate-60{transform:rotate(60deg)}.cen-rotate-180{transform:rotate(180deg)}.cen-rotate-270{transform:rotate(270deg)}.cen-rotate-360{transform:rotate(360deg)}
+
+/*CSS Utilities*/
+.cen-clear-float:after{clear: both}.cen-cursor-pointer{cursor: pointer}
+
+
+
+/*Alert top logo*/
+.cen-alert-top-logo,.cen-welcome-top-logo{position:absolute;width:40px;height:40px;right:-10px;top:-10px}
+/*Main Header*/
+#cen-main-header{
+    height: 60px;
+    visibility: visible;
+    transition:height 0.3s, visibility 0.3s;
+
+}
+
+/*Main Header2*/
+#cen-main-header2{
+    height: 40px;
+    transition:height 0.3s;
+}
+
+/*Main Tab Display controls*/
+.cen-tab-button .cen-tab-close{display: none}
+.cen-tab-button.cen-active .cen-tab-close,.cen-tab-button:hover .cen-tab-close{display: block!important}
+
+.cen-tab-button.cen-active:hover{
+    background-color:rgb(0, 0, 0)!important;
+    background-color:rgba(0, 0, 0, 0.8)!important;
+}.cen-tab-button{
+    color:rgb(255, 255, 255);
+}.cen-tab-dropdown{width:200px; max-height: 200px; overflow: auto; position: absolute; background-color: rgb(255, 255, 255);z-index: 4;right: 0px}
+ul.cen-tab-dropdown li a {text-decoration: none;width: 100%; height: 100%; display: block}
+/*Main body*/
+#cen-main-body{
+    height: calc(100% - 100px); transition:width 0.3s
+}
+
+/*Side Bars*/
+.cen-side-width{width: 200px; transition:width 0.3s;}
+
+/*Menu Side bar*/
+#cen-menu-sidebar:hover{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#cen-menu-sidebar .cen-menu{
+    width: 194px; cursor: pointer; transition:width 0.3s
+
+}#cen-menu-sidebar hr{
+    width: 90%; margin: auto; margin-top: 7px; margin-bottom: 7px
+}
+#cen-main-header2 .cen-main-content .cen-tab-button.cen-active{
+    background-color:rgb(0, 0, 0)!important;
+    background-color:rgba(0, 0, 0, 0.8)!important;
+}
+/*#cen-main-header2 .cen-tab-button.cen-active .cen-tab-close{display: none!important}*/
+
+/*Page big menu button*/
+.cen-page-menu-big{min-width: 130px!important;margin-bottom:15px}
+
+/*Not Available Page*/
+.cen-na ~ *{display:none}
+
+/*Group Box Control*/
+/*Hide*/
+div .cen-groupbox-header .fa-plus{display: inline}
+div .cen-groupbox-header .fa-minus,div .cen-groupbox-cont{display: none}
+/*Display*/
+.cen-groupbox-open .cen-groupbox-header .fa-plus{display: none}
+.cen-groupbox-open .cen-groupbox-header .fa-minus{display: inline}
+.cen-groupbox-open .cen-groupbox-cont{display: block}
+.cen-groupbox-cont{max-height: 300px;overflow: auto}
+
+/*Main Tab Content Container Background*/
+.cen-main-tab-bg{
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+background-image: url(aim://me://images/resourse/mainbg.png); background-color: #FFF}
+
+/*Multi loading container for browseInto*/
+.cen-multiupload-cont > img{
+    display: inline-block; height: 100px; border:solid #e4e4e4 thin; border-radius: 3px; margin: 3px;
+}
+.cen-filter-first-btn,.cen-filter-second-btn,.cen-filter-third-btn{
+        border-width: 0px!important;
+    }
+    .cen-filter-first .cen-filter-first-btn,.cen-filter-second .cen-filter-second-btn,.cen-filter-third .cen-filter-third-btn{
+       border-width: 2px!important;
+    }
+    .cen-listbox li{
+        border-bottom: #eeeeee solid thin!important;
+        display: block;
+    }
+    .sub-logout-btn{
+        visibility: hidden;
+    }
+
+
+
+/*Responsiveness*/
+/*Small screen*/
+@media (max-width:600px){
+    #cen-main-body .cen-main-content{width: 100%; transition:width 0.3s}
+    #cen-main-header2 .cen-main-content{width: calc(100% - 50px - 50px - 50px); transition:width 0.3s}
+    #cen-main-header2 .cen-side-width-large{width: 50px!important; transition:width 0.3s}
+    #cen-main-header2 .cen-side-width{width: 100px; transition:width 0.3s}
+    #cen-main-body .cen-side-width{
+        width: 200px; position: absolute;
+    }
+    #cen-main-header2 .cen-tab-button{display: none}
+    /*#cen-main-header2 .cen-tab-button.cen-active{display: block!important; width: calc(100% - 20px)}*/#cen-main-header2 .cen-tab-button .cen-tab-close,
+    #cen-main-body .cen-side-width-large{position: absolute; right: 0px;z-index: 3; width: 300px; 
+        background-color: rgb(0, 0, 0)!important;
+        background-color: rgba(0, 0, 0,0.933)!important;
+        transition:width 0.3s}
+    #cen-main-body .cen-side-width{width: 200px;left: 0px;position: absolute; right: 0px;z-index: 4;; background-color: rgb(0, 0, 0,0.933)!important; transition:width 0.3s}
+    #cen-main-body .cen-side-width .cen-menu .cen-menu-logo{width: 30px; transition:width 0.3s}
+    .cen-welcome-page .w3-row .w3-leftbar{
+        border-top:thin solid #ccc!important;
+        border-left:none!important;
+    } 
+    .cen-report-height{height:calc(100% - 40px);}
+    #cen-main-body{
+        height: calc(100% - 100px + 40px); transition:width 0.3s
+    }
+    .cen-page-menu-big{margin-bottom:15px}
+    .cen-tab-body-title{max-width: 150px; overflow: hidden; height: 30px;}
+    .cen-groupbox-cont{max-height: unset;overflow: auto}
+    .cen-smaller-in-small{font-size: 0.85em!important}
+    .cen-bigger-in-small{font-size: 1.3em!important}
+    /*Overflows*/
+.cen-hover-overflow-auto,.cen-hover-overflow-x-auto{overflow: auto}
+    }
+    
+    /*Medium screen*/
+    @media (max-width:992px) and (min-width:601px){
+        #cen-main-body .cen-main-content{width: calc(100% - 50px); transition:width 0.3s}/*enlarge the main content area to ocupy the dashboard and menu area less the 50px menu icon display*/
+        #cen-main-header2 .cen-main-content{width: calc(100% - 50px - 50px); transition:width 0.3s}/*On the header main area will occupy less the menu and dashboard logo*/
+        #cen-main-header2 .cen-side-width-large{width: 50px!important; transition:width 0.3s}/*make the header dashboard area be the width of the logo only*/
+        #cen-main-header2 .cen-side-width,#cen-main-body .cen-side-width{width: 50px; transition:width 0.3s}/*make the header menu area be the width of the logo only*/
+        #cen-main-body .cen-main-content .cen-tab-dropdown{right: 50px; transition:width 0.3s}/*Shift droup down to be under the arrow*/
+        #cen-main-body .cen-side-width-large{position: absolute; right: 0px;z-index: 3; width: 300px; 
+            background-color: rgb(0, 0, 0)!important;
+            background-color: rgba(0, 0, 0,0.933)!important;
+        }
+        #cen-main-body .cen-side-width .cen-menu{width: 50px; transition:width 0.3s}
+        #cen-main-body .cen-side-width .cen-menu .cen-menu-logo{width: 40px; transition:width 0.3s}
+        #cen-main-body .cen-side-width .cen-menu .cen-menu-logo i{opacity:1}
+        .cen-report-height{height:calc(100% - 40px);}
+            /*Overflows*/
+.cen-hover-overflow-auto,.cen-hover-overflow-x-auto{overflow: auto}
+    }
+
+   
+
+    
+    /*Large screen*/
+    @media (min-width:993px){
+        .cen-main-content{width: calc(100% - 200px - 300px); transition:width 0.3s}
+        .cen-side-width-large{width: 300px; transition:width 0.3s}
+        .cen-toggle-side-large i{transform: rotate(0deg); transition:transform 0.3s}
+        /*Turn Hide / Display of the top header */
+        .cen-hide-top-header #cen-main-header{
+            height: 0px;
+            visibility: hidden;
+    transition:height 0.3s, visibility 0.1s;
+        }
+        .cen-hide-top-header #cen-hide-top-btn{transform: rotate(180deg); transition:transform 0.3s}
+        .cen-hide-top-header #cen-main-body{
+            height: calc(100% - 40px); transition:height 0.3s
+        }
+        .cen-hide-top-header .sub-logout-btn{
+            visibility: visible; transition:visibility linear 2s ;
+        }
+
+         /*Turn on medium view*/
+    .cen-minimize-menu #cen-main-header2 .cen-main-content{width: calc(100% - 50px - 300px); transition:width 0.3s;}/*On the header main area will occupy less the menu and dashboard logo*/
+    .cen-minimize-menu #cen-main-body .cen-main-content{width: calc(100% - 50px - 300px); transition:width 0.3s;}
+    .cen-minimize-menu #cen-main-header2 .cen-side-width,.cen-minimize-menu #cen-main-body .cen-side-width{width: 50px; transition:width 0.3s;}/*make the header menu area be the width of the logo only*/
+
+    .cen-minimize-menu #cen-main-body .cen-side-width .cen-menu{width: 50px; transition:width 0.3s;}
+    /*.cen-minimize-menu #cen-main-body .cen-side-width,.cen-minimize-menu #cen-main-body .cen-side-width .cen-menu{ transition:width 0.6s;}*/
+    .cen-minimize-menu #cen-main-body .cen-side-width .cen-menu .cen-menu-logo{width: 40px; transition:width 0.3s;}
+    .cen-minimize-menu #cen-main-body .cen-side-width .cen-menu .w3-hide-medium{display: none!important}
+    .cen-minimize-menu #cen-main-body .cen-side-width .cen-menu .cen-menu-logo i{opacity:1}
+    .cen-report-height{height:calc(100% - 80px);}
+
+    .cen-side-minimize #cen-main-body .cen-main-content{width: calc(100% - 50px - 200px); transition:width 0.3s;}
+    .cen-side-minimize #cen-main-body .cen-side-width-large{width: 50px!important; transition:width 0.3s; overflow: hidden;}/*make the header dashboard area be the width of the logo only*/
+    .cen-side-minimize #cen-main-body .cen-side-width-large .aim-tab-button,.cen-side-minimize #cen-main-body .cen-side-width-large .aim-tab-body{display: none}/*Hide all Tab button*/
+    .cen-side-minimize #cen-main-body .cen-side-width-large .cen-toggle-side-large{width: 50px}
+    .cen-side-minimize #cen-main-body .cen-side-width-large .cen-toggle-side-large i{transform: rotate(180deg); transition:transform 0.3s}
+
+    /*The two side hidden*/
+   .cen-side-minimize.cen-minimize-menu #cen-main-body .cen-main-content{width: calc(100% - 50px - 50px); transition:width 0.3s;}
+    }
+
+
+    /*Show */
+    .cen-show{display: block!important}
+
+    .cen-checkbox{
+        position: relative;
+        padding-left: 25px;min-height: 20px;display: inline-block;
+    }
+    .cen-checkbox.cen-box{display: block; padding-left:initial}
+    .cen-checkbox input{
+      opacity: 0; position: absolute;
+      cursor: pointer
+    }
+    .cen-checkbox input ~ .cen-check-logo{ position: absolute; left: 0px;top: 0px;border-radius:50%}
+    .cen-checkbox.cen-box input ~ .cen-check-logo{ position: relative;border-radius:inherit}
+    .cen-checkbox input ~ .cen-check-logo span{width: 20px; height: 20px; position: relative;display: block;border-radius:50%;border:#ccc solid thin}
+    .cen-checkbox.cen-box input ~ .cen-check-logo span{margin:auto;border:none}
+    .cen-checkbox input ~ .cen-check-logo span i{display: none;text-align: center;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+    .cen-checkbox.cen-box input ~ .cen-check-logo span i{display: inline;text-align: center;position: relative;top:0;left:0;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);opacity:0}
+    .cen-checkbox input:checked ~ .cen-check-logo span i{display: inline;text-align: center;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);animation:anizoom 0.3s; color: #fff}
+    .cen-checkbox.cen-box input:checked ~ .cen-check-logo span i{display: inline;text-align: center;position: relative;top:0;left:0;animation:anizoom 0.3s;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);opacity:1}
+    .cen-checkbox:hover input ~ .cen-check-logo span i{color: #fff}
+
+    .cen-checkbox  input ~ .cen-checker{opacity:0}
+    .cen-checkbox  input:checked ~ .cen-checker{opacity:1}
+    
+    @keyframes anizoom{from{opacity:0} to{opacity:1}}
+   
+    /*w3css custon checkbox*/
+     /* Customize the label (the container) */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  } 
+
+  /*Switch*/
+  .cen-switch{
+    width: 30px; position:relative; height:30px;padding-top:10px;display:block;cursor: pointer;
+  }.cen-switch input{opacity: 0; position: absolute; z-index: 2 ; width:100%; height:100%; left:0; top:2px;cursor: pointer;}
+   .cen-switch input ~ .cen-switch-bar{width:100%; height:8px;
+    background-color: #eee !important;
+    background-color: #eee !important;
+}
+  .cen-switch input ~ .cen-switch-nob{width:15px;height:15px;position:absolute;padding:2px;top:6px;left:0px;transition:left 0.3s;background-color: #aaa !important;right: initial;}
+  .cen-switch input:checked ~ .cen-switch-nob{width:15px;height:15px;position:absolute;padding:2px;top:6px;left:15px;transition:left 0.3s; background-color:initial }
+  .cen-switch:hover{opacity: 0.8;}
+
+  /* Centritab Login input type display flag (textbox or dropdown) */
+  .loginpage select{display: none}
+  .loginpage select.true{display: block}
+  .loginpage input.true{display: none}
+
+  .amimate-width{
+      transition:width 0.6s;
+  }
+
+/* Centritab Note */
+.cen-note{
+width: auto;
+margin: 15px;
+padding: 10px;
+position: relative;
+border-radius: 5px;
+text-align: left; font-style: italic
+}
+
+.cen-note .cen-note-icon{
+  position: absolute;
+  right: -5px;
+  top:-5px;
+  padding: 5px;
+  border-radius: 50%;
+  font-size:9px;
+}
+
+/* Centritab Note */
+
+/*Centritab Loading indicator*/
+.cen-loading-ind{
+ animation: bganim 0.6s infinite;
+}
+/* @keyframes bganim{
+    0%{background-color: rgba(0, 0, 0, 0)}
+    50%{background-color: rgba(0, 0, 0, .9)}
+    100%{background-color: rgba(0, 0, 0, 0)}
+} */
+@keyframes bganim{
+    0%{opacity: 1}
+    50%{opacity: 0.3}
+    100%{opacity: 1}
+}
+/*Centritab Loading indicator*/
+
+/* Hint */
+.cen-alert-hint{
+    position: fixed;
+    z-index: 100;
+    min-width: 300px;
+    min-height: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #FFF;
+    bottom:10px;
+    right: 10px;
+    border-radius: 4px;
+    display: none;
+    width: auto;
+}
+
+
+
+.cen-alert-hint .cen-alert-hint-others,.cen-alert-hint .cen-alert-hint-content{
+  width: 40px; display: inline-block; vertical-align: middle;
+}
+.cen-alert-hint .cen-alert-hint-content{
+    width: calc(100% - 44px);
+}
+.cen-alert-hint .cen-alert-hint-others{
+    text-align: center;
+}
+.cen-alert-hint-close{
+ border:none; background-color: transparent;  margin: auto; cursor: pointer;
+}
+
+.cen-alert-hint .cen-alert-hint-title{
+font-weight: bold;
+}
+
+.cen-headbg{
+    background-image: url(ui/centritab/images/resourse/headbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}

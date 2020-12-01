@@ -1,0 +1,9 @@
+<% #MainAlert %>
+<div class="aprs-alert aim-trigger aim-toggler" style="display:none" aim-toggler-hide="MainAlert">
+   <div class="aprs-alert-cont  w3-card">
+       <div class="aprs-alert-title aprs-text-forecolor">{{aim-alert-title}}</div>
+       <div class="aprs-alert-body">
+           {{aim-alert-body}}
+       </div>
+   </div>
+</div>

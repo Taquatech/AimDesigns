@@ -1,0 +1,24 @@
+<% #SmallAlert %>
+ <!-- Alert -->
+            <div id="cen-alert-small" class=" w3-card-4 cen-round w3-mobile w3-animate-opacity" style="max-width:400px;min-width:300px;position:fixed;top:100px;left:50%;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%);z-index:1000;display:none;">
+                <img id="cen-alert-logo" class="cen-alert-top-logo" src="aim://me://images/resourse/info.png" />
+              <div class="w3-white cen-padding-0 cen-round">
+                    
+                    <h1 class="cen-bg-color cen-headbg cen-padding w3-medium w3-text-white cen-round-top w3-border-bottom w3-border-grey" style="background-image:url(aim://me://images/resourse/headbg.png)"><span>{{aim-alert-title}}</span> <button class="aim-toggler aim-trigger cen-text-shadow cen-square-20 w3-display-container w3-button cen-bg-color w3-right cen-text-white cen-padding-0 w3-hover-none cen-hover-danger w3-circle cen-margin-right aim-autoload" aim-toggler-hide="SmallAlert" aim-autoload-delay="10" ><i class="fas fa-times w3-display-middle cen-smaller"></i></button>
+                             <div style="clear: both"></div>
+                    </h1>
+                    
+                    <div class="w3-container cen-text-shadow-none w3-text-grey w3-padding cen-smaller" style="max-height: 300px">
+                        {{aim-alert-body}}
+                    </div>
+                    <div class="w3-container w3-border-top w3-padding w3-light-grey cen-smaller cen-round-bottom">
+                        
+                    </div>
+                   <!--  <button class="aim-toggler w3-hide cen-text-shadow w3-button cen-bg-color w3-right cen-text-danger cen-padding-0 w3-hover-none cen-hover-text-danger cen-margin-right aim-autoload" aim-toggler-hide="SmallAlert" aim-autoload-delay="3" id="smallalertbtn" ><i class="fas fa-times"></i></button>
+                    <div class="w3-container w3-border-top w3-padding w3-light-grey cen-smaller cen-round-bottom">
+                        <button class="w3-button w3-circle w3-light-grey w3-right cen-border-success-fade cen-hover-border-success cen-text-success w3-hover-none w3-border cen-square-tiny cen-padding-0 w3-display-container cen-margin-left-small  cen-hover-text-success-fade"  ><i class="fas fa-check w3-display-middle"></i></button>
+                    </div>-->
+              </div>
+
+            </div>
+   <!-- Alert End -->

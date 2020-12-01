@@ -1,0 +1,52 @@
+<aim-local-data>
+    {
+        "PageLogo":"aim://me://images/iconsm.png",
+        "PageLogoTitle":"Welcome to aquaya",
+        "PageTitle":"Sign Up",
+        "PageID":"signupform",
+        "Username":{
+            "ID":"phoneNum","Label":"Phone number","Placeholder":"Input phone number","Type":"number","Class":"signintext"
+        },
+        "Comfirm":{
+            "ID":"confirm","Label":"Comfirm phone number","Placeholder":"Re-type your phone number","Class":"signintext","Type":"text"
+        },
+        "Password":{
+            "ID":"otp","Label":"Enter OTP","Placeholder":"6 digits","Class":"signintext","ActionText":"Get OTP","ActionClass":"","ActionAttr":"","Type":"password"
+        },
+        "Button":{
+            "ID":"signup_btn","Class":"aim-datafill aim-trigger","Attr":"aim-src=\"me://templates/headerpage.aim\" aim-container=\"signupform\" aim-execute=\"Process\"","Text":"Confirm"
+        },
+        "Footer":"By clicking <strong>Confirm</strong> you accept the <br/> <a class=\"aprs-text-forecolor aprs-no-decoration\" href=\"#\">Terms and Conditions</a>"
+    }
+</aim-local-data>
+<aim-widget window-smaller></aim-widget>
+<aim-widget pagepadding>
+    <aim-widget headlogo  logo="{{PageLogo}}" logoTitle="{{PageLogoTitle}}" title="{{PageTitle}}"></aim-widget>
+           <aim-widget pageform id="{{PageID}}_form">
+        <!-- TextBox -->
+            <div class="aprs-height-20px"></div>
+            {{Username}}
+             <aim-widget textbox id="{{ID}}" label="{{Label}}" placeholder="{{Placeholder}}" type="{{Type}}" class="fadeInUp animated delay-0-8s" aim-datafield="{{ID}}" iclass="{{Class}}" required="required" ></aim-widget>
+            <div class="aprs-height-30px"></div>
+            {{Username}}
+            {{Comfirm}}
+             <aim-widget textbox id="{{ID}}" label="{{Label}}" placeholder="{{Placeholder}}" type="{{Type}}" class="fadeInUp animated delay-0-9s" aim-datafield="{{ID}}" iclass="{{Class}}" required="required" ></aim-widget>
+            <div class="aprs-height-30px"></div>
+            {{Comfirm}}
+            {{Password}}
+            <aim-widget textbutton id="{{ID}}" label="{{Label}}" placeholder="{{Placeholder}}" type="{{Type}}" class="fadeInUp animated delay-0-9s" required  aim-datafield="{{ID}}" iclass="{{Class}}">
+                <buttonText>{{ActionText}}</buttonText>
+                <buttonClass>{{ActionClass}}</buttonClass>
+                <buttonAttr>{{ActionAttr}}</buttonAttr>
+            </aim-widget>
+            <div class="aprs-height-40px"></div>
+            {{Password}}
+            <!-- <button id="signup_btn" name="signup_btn" type="button" class="ripple w3-text-white aprs-button aprs-forecolor aprs-strong w3-center ripple w3-card">Comfirm</button> -->
+            {{Button}}
+            <aim-widget btn id="{{ID}}" class="{{Class}} fadeInUp animated delay-1s" {{Attr}}>{{Text}}</aim-widget>
+            <div class="aprs-height-30px"></div>
+            {{Button}}
+        <div class="w3-center w3-small fadeInUp animated delay-1-2s">{{Footer}}</div>
+           </aim-widget>
+</aim-widget>
+<aim-widget sidebutton-left id="backbtn" logo="fas fa-chevron-left" class="w3-hide-large w3-hide-medium fadeInLeft animated faster delay-1-8s aim-toggler aim-trigger" aim-toggler-class="aprs-show-page" aim-toggler-target="aim-parent-parent" >Home</aim-widget>

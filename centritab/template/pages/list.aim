@@ -1,0 +1,116 @@
+  
+      <aim-local-data>
+          {
+              "ListID":"listtemp",
+              "ListTitle":"List Page",
+              "ListLogo":"list-alt",
+              "ActionButtons":[
+                {"Logo":"plus","Title":"Add","Class":"aim-datafill","Attr":"aim-src=\"root://ui/operation/customer/add.aim\" aim-container=\"cen-central-tab\" aim-datafill-update=\"true\"aim-data=\"new=1\""},
+                {"Logo":"print","Title":"Print","Class":"aim-printer","Attr":"aim-printer-data=\"\" aim-printer-orientation=\"P\" aim-printer-src=\"root://ui/operation/customer/customerlist.aim\" aim-printer-title=\"Customer List\" aim-printer-watermark=\"{{AppSubName}}\""}
+              ],
+              "List":[
+                {"ID":"1","Name":"List Template 1","Tag":"LIST0001","Phone":"080676767767","Email":"list_template@aim.net"},
+                {"ID":"2","Name":"List Template 2","Tag":"LIST0001","Phone":"080676767767","Email":"list_template@aim.net"},
+                {"ID":"3","Name":"List Template 3","Tag":"LIST0001","Phone":"080676767767","Email":"list_template@aim.net"},
+                {"ID":"4","Name":"List Template 4","Tag":"LIST0001","Phone":"080676767767","Email":"list_template@aim.net"},
+                {"ID":"5","Name":"List Template 5","Tag":"LIST0001","Phone":"080676767767","Email":"list_template@aim.net"}
+              ]
+          
+          }
+      </aim-local-data>
+      <aim-fill-data>
+        {
+            "Rows":{
+              "RowID":"{{ID}}",
+              "RowClass":"aim-trigger aim-datafill aim-filter-item",
+              "RowAttr":"aim-src=\"root://ui/template/pages/list.aim\" aim-data=\"ID={{ID}}\" aim-container=\"cen-central-tab\" aim-datafill-update=\"true\"",
+              "Columns":[
+              {"Class":" m4 s3","Title":"Name","Content":"{{Name}}"},
+              {"Class":" m2 s4","Title":"Customer Tag","Content":"{{Tag}}"},
+              {"Class":" m2 s0 w3-hide-small","Title":"Phone","Content":"{{Phone}}"},
+              {"Class":" m3 s4","Title":"Email","Content":"{{Email}}"}
+          ],
+          "Action":{"Class":"","Title":"Perform Action","Attr":"","Logo":"ellipsis-h"}
+          
+          }
+        }
+      </aim-fill-data>
+
+      
+        <!--tab button -->
+        <aim-tab-button>
+            <aim-widget TabButton Logo="{{ListLogo}}" Title="{{ListTitle}}"></aim-widget>
+        </aim-tab-button>
+        <aim-page-title>{{ListTitle}}</aim-page-title>
+        <!--Page tab Withdrawer-->
+        <aim-widget TabContent2 TabLogo="{{ListLogo}}">
+            <TabTitle>{{ListTitle}} (<span id="{{ListID}}">{{List->$}}</span>)</TabTitle>
+            <TabHeaderButton>
+                {{ActionButtons}}
+                <aim-widget RoundButton Title="{{Title}}" Class="aim-trigger {{Class}}" Logo="{{Logo}}">
+                    <AimAttr>{{Attr}}</AimAttr>
+                </aim-widget>
+                {{ActionButtons}}
+                
+                <aim-widget RoundButton Title="Close Tab" Class="aim-tab-close" Logo="times"></aim-widget>
+            </TabHeaderButton>
+
+            <!-- Filter Box -->
+            <aim-widget SearchBoxOnly FilterBox="{{ListID}}-list" FilterTarget="{{ListID}}" SearchClass="" Title="{{ListTitle}}"></aim-widget>
+            <!-- Content / List -->
+            <aim-widget TabListBox ID="{{ListID}}-list">
+
+                <TabListContent>
+                    {{List}}
+                    {{Rows}}
+                    <aim-widget TabListItem ID="{{ListID}}-{{RowID}}" Class="{{RowClass}}" Counter="{{$}}" >
+                            <LAttr>{{RowAttr}}</LAttr>
+                        <TabListItemContent>
+                            <!-- <div class="w3-col m1 s1 cen-overflow-hidden">
+                                <img src="{{Passport}}" class="cen-width-30 cen-height-30 w3-circle cen-white-fade cen-margin-auto cen-block cen-margin-auto"
+                                    alt="image" />
+                            </div> -->
+                            {{Columns}}
+                            <div class="w3-col {{Class}} w3-padding cen-overflow-hidden aim-filter-field" title="{{Title}}">{{Content}}</div>
+                            {{Columns}}
+                            {{Action}}
+                            <div class="w3-col m1 s1">
+                                <div class="w3-row">
+                                    <div class="w3-col s12">
+                                        <aim-widget LogoButton Class="{{Class}}" Logo="{{Logo}}" Title="{{Title}}">
+                                            <AimAttr>{{Attr}}</AimAttr>
+                                        </aim-widget>
+                                    </div>
+                                   
+                                </div>
+
+
+                            </div>
+                            {{Action}}
+                        </TabListItemContent>
+                    </aim-widget>
+                    {{Rows}}
+                    {{List}} 
+                    {{!List}}
+                    <p class="w3-xlarge w3-center ">
+                        <i class="fas fa-trash"></i> &nbsp; No {{ListTitle}} Found</p>
+                    {{!List}}
+                </TabListContent>
+            </aim-widget>
+
+
+
+        </aim-widget>
+  
+
+    <aim-section Failed>
+        <aim-alert MainAlert>
+            <aim-alert-title>Reading {{ListTitle}} Failed</aim-alert-title>
+            <aim-alert-body>
+                <aim-widget CircleLogo Logo="exclamation-triangle"></aim-widget>
+                Opps!!!, Something went wrong
+                <br />
+                <p class="cen-bigger cen-bold cen-text-danger">{{Message}}</p>
+            </aim-alert-body>
+        </aim-alert>
+    </aim-section>

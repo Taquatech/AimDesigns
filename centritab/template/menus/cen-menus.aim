@@ -1,0 +1,19 @@
+<aim-local-data>
+    { 
+       
+        "Buttons":[ {"Logo":"cart-plus","Title":"Items","Info":"Setup Items","Page":"root://ui/operation/item/list.aim","Data":"","Class":"","OAttr":""}, {"Logo":"archive","Title":"Package","Info":"Setup Packages","Page":"root://ui/operation/Package/list.aim","Data":"","Class":"","OAttr":""}, {"Logo":"cog","Title":"Price","Info":"Setup Price Structure","Page":"","Data":"","Class":"","OAttr":""}, {"Logo":"cog","Title":"User","Info":"Manage Users","Page":"","Data":"","Class":"","OAttr":""}
+    ] }
+</aim-local-data>
+
+    <div class="w3-row w3-margin-top">
+        {{Buttons}}
+        <div class="w3-col m4  cen-padding-bottom">
+
+        <aim-widget OptionButton Logo="{{Logo}}" Title="{{Title}}" Class="aim-datafill aim-trigger {{Class}} fadeInUp animated  delay-0-{{$}}s" Info="{{Info}}">
+                <AimAttr>aim-src="{{Page}}" aim-container="cen-central-tab" aim-data="{{Data}}" {{OAttr}}</AimAttr>
+            </aim-widget>
+
+        </div>
+        {{Buttons}}
+    </div>
+

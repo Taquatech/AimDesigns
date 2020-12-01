@@ -1,0 +1,34 @@
+<aim-local-data>
+  { 
+      "Logo":"wrench",
+      "Title":"Prompt",
+      "Info":"Aim Prompt, Click OK or Cancel",
+      "OK":{"Text":"Ok Button","Title":"","Logo":"check","Attr":""}
+      ,
+      "Cancel":{"Text":"Cancel Button","Title":"","Logo":"times","Attr":""}
+   }
+</aim-local-data>
+<aim-alert MainAlert>
+ <aim-alert-title>
+ <i id="cen-alert-icon" class="fas fa-{{Logo}}"></i> {{Title}}
+ </aim-alert-title>
+ <aim-alert-body>
+   <!-- <span class="cen-text-color cen-bold">{{LoginName}}</span> --> {{Info}}<br /><br />
+   <div class="w3-row">
+     <div class="w3-col s6 w3-center">
+   {{OK}}
+      <aim-widget Button Text="{{Text}}" Title="{{Title}}" Logo="{{Logo}}" ColorClass="cen-success" Class="aim-datafill aim-trigger aim-toggler aim-focus">
+          <AimAttr>aim-toggler-hide="MainAlert" {{Attr}}</AimAttr>
+      </aim-widget>
+      {{OK}}
+     </div>
+     <div class="w3-col s6 w3-center">
+      {{Cancel}}
+      <aim-widget Button Text="{{Text}}" Title="{{Title}}" Logo="{{Logo}}" ColorClass="cen-danger" Class="aim-datafill aim-trigger aim-toggler aim-focus">
+        <AimAttr>aim-toggler-hide="MainAlert" {{Attr}}</AimAttr>
+    </aim-widget>
+  </div>
+    {{Cancel}}
+  </div>
+    </aim-alert-body>
+  </aim-alert>

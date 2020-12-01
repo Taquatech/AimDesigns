@@ -1,0 +1,17 @@
+<aim-local-data>
+    { 
+        "Logo":"wrench",
+        "Title":"Setup",
+        "Info":""
+     }
+</aim-local-data>
+<aim-alert MainAlert>
+    <aim-alert-title><i class="fas fa-{{Logo}}"></i> {{Title}}</aim-alert-title>
+    <aim-alert-body>
+        <div class="w3-large w3-center" style="font-weight: bold">{{Info}}</div>
+        <aim-import>@me://template/menus/cen-small-menus.aim</aim-import>
+    </aim-alert-body>
+</aim-alert>
+
+
+
