@@ -7,7 +7,7 @@
                 <div class="aprs-banner-cover w3-display-container">
                     <div class="w3-display-middle w3-center">
                         <img class="aprs-small-logo fadeInUp animated delay-0-2s" src="{{bannerLogo}}" />
-                        <div class="aprs-banner-text fadeInUp animated delay-0-4s w3-text-white">We turn <strong class="aprs-text-forecolor">DREAMS</strong> to <strong class="aprs-text-forecolor">REALITY</strong></div>
+                        <div class="aprs-banner-text fadeInUp animated delay-0-4s w3-text-white">{{bannerText||We turn <strong class="aprs-text-forecolor">DREAMS</strong> to <strong class="aprs-text-forecolor">REALITY</strong>}}</div>
                     </div>
                     <button  type="button" class=" fadeIn animated delay-0-6s ripple w3-hide-large w3-hide-medium w3-text-white aprs-button aprs-forecolor aprs-strong w3-center ripple w3-card aprs-banner-btn w3-display-bottommiddle aim-toggler aim-trigger" aim-toggler-class="aprs-show-page" aim-toggler-target="aim-parent-parent-parent-parent">Start</button> 
                     </div>
